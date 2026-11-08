@@ -1,0 +1,1916 @@
+<!doctype html>
+<html lang="en" data-sx-theme="light">
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:05:06 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sovix — a social network for people who make things. Share work in progress, follow makers, and keep up with your circle.">
+  <meta name="author" content="Sovix">
+  <meta name="theme-color" content="#4b34d9">
+
+  <title>Sovix - Social Network &amp; Community HTML Template</title>
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/svg+xml">
+  <link rel="canonical" href="index-2.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sovix">
+  <meta property="og:title" content="Home feed — Sovix">
+  <meta property="og:description" content="A social network for people who make things.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <a class="sx-skip-link" href="#feed">Skip to the feed</a>
+
+  <!-- ====================================================== TOPBAR ====== -->
+  <header class="sx-topbar" data-sx-topbar>
+    <div class="container-xxl sx-topbar__inner">
+
+      <a class="sx-brand" href="index-2.html">
+        <img class="sx-brand__mark" src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span class="sx-brand__word">Sovix</span>
+      </a>
+
+      <button class="sx-iconbtn sx-iconbtn--plain sx-searchtoggle" type="button"
+              data-sx-search-toggle aria-expanded="false" aria-label="Search Sovix">
+        <i data-lucide="search" class="ic-22"></i>
+      </button>
+
+      <form class="sx-search" role="search" action="https://html.themiverse.com/sovix-demo/search.html" method="get" data-sx-search-panel>
+        <label class="sx-sr-only" for="q">Search Sovix</label>
+        <i class="sx-search__icon ic-18" data-lucide="search"></i>
+        <input class="form-control sx-search__input" id="q" name="q" type="search"
+               placeholder="Search people, spaces, tags" autocomplete="off" data-sx-search>
+        <kbd class="sx-search__hint">/</kbd>
+      </form>
+
+      <nav class="sx-topbar__nav" aria-label="Primary">
+        <a class="sx-tab" href="index-2.html" data-bs-toggle="tooltip" data-bs-title="Home">
+          <i data-lucide="house" class="ic-22"></i><span class="sx-sr-only">Home</span>
+        </a>
+        <a class="sx-tab" href="explore.html" data-bs-toggle="tooltip" data-bs-title="Explore">
+          <i data-lucide="compass" class="ic-22"></i><span class="sx-sr-only">Explore</span>
+        </a>
+        <a class="sx-tab" href="assistant.html" data-bs-toggle="tooltip" data-bs-title="Assistant">
+          <i data-lucide="sparkles" class="ic-22"></i><span class="sx-sr-only">Assistant</span>
+        </a>
+        <a class="sx-tab" href="network.html" data-bs-toggle="tooltip" data-bs-title="Network">
+          <i data-lucide="users" class="ic-22"></i><span class="sx-sr-only">Network</span>
+        </a>
+        <a class="sx-tab" href="messages.html" data-bs-toggle="tooltip" data-bs-title="Messages">
+          <i data-lucide="message-circle" class="ic-22"></i>
+          <span class="sx-dot sx-tnum">3</span><span class="sx-sr-only">Messages, 3 unread</span>
+        </a>
+      </nav>
+        <div class="dropdown sx-pagesmenu">
+          <button class="sx-tab" type="button" data-bs-toggle="dropdown" data-bs-offset="0,14"
+                  aria-expanded="false" aria-label="All pages">
+            <i data-lucide="layout-grid" class="ic-22"></i><span class="sx-sr-only">All pages</span>
+          </button>
+          <div class="dropdown-menu sx-menu sx-mega">
+            <div class="sx-mega__grid">
+          <div>
+            <p class="sx-mega__title">Feed</p>
+            <a class="sx-mega__link is-active" href="index-2.html" aria-current="page">Home feed</a>
+            <a class="sx-mega__link" href="post.html">Post detail</a>
+            <a class="sx-mega__link" href="tag.html">Tag page</a>
+            <a class="sx-mega__link" href="search.html">Search results</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">People</p>
+            <a class="sx-mega__link" href="profile.html">Profile</a>
+            <a class="sx-mega__link" href="network.html">Your network</a>
+            <a class="sx-mega__link" href="messages.html">Messages</a>
+            <a class="sx-mega__link" href="messages-group.html">Group chat</a>
+            <a class="sx-mega__link" href="notifications.html">Notifications</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Community</p>
+            <a class="sx-mega__link" href="groups.html">Groups</a>
+            <a class="sx-mega__link" href="group.html">Group detail</a>
+            <a class="sx-mega__link" href="group-settings.html">Group settings</a>
+            <a class="sx-mega__link" href="spaces.html">Spaces</a>
+            <a class="sx-mega__link" href="space.html">Space detail</a>
+            <a class="sx-mega__link" href="events.html">Events</a>
+            <a class="sx-mega__link" href="calendar.html">Calendar</a>
+            <a class="sx-mega__link" href="todo.html">To do</a>
+            <a class="sx-mega__link" href="event.html">Event detail</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Discover</p>
+            <a class="sx-mega__link" href="explore.html">Explore</a>
+            <a class="sx-mega__link" href="gallery.html">Gallery</a>
+            <a class="sx-mega__link" href="blog.html">Blog</a>
+            <a class="sx-mega__link" href="blog-post.html">Blog post</a>
+            <a class="sx-mega__link" href="saved.html">Saved</a>
+            <a class="sx-mega__link" href="story.html">Story viewer</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Assistant</p>
+            <a class="sx-mega__link" href="assistant.html">Assistant chat</a>
+            <a class="sx-mega__link" href="ai-tools.html">AI tools</a>
+            <a class="sx-mega__link" href="creations.html">AI creations</a>
+            <a class="sx-mega__link" href="creation.html">Creation detail</a>
+            <a class="sx-mega__link" href="create.html">Create studio</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Store</p>
+            <a class="sx-mega__link" href="store.html">Store</a>
+            <a class="sx-mega__link" href="product.html">Product detail</a>
+            <a class="sx-mega__link" href="cart.html">Cart</a>
+            <a class="sx-mega__link" href="checkout.html">Checkout</a>
+            <a class="sx-mega__link" href="order-confirmation.html">Order complete</a>
+            <a class="sx-mega__link" href="purchases.html">Your purchases</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Work</p>
+            <a class="sx-mega__link" href="jobs.html">Jobs</a>
+            <a class="sx-mega__link" href="job.html">Job detail</a>
+            <a class="sx-mega__link" href="analytics.html">Analytics</a>
+            <a class="sx-mega__link" href="settings.html">Settings</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Account & site</p>
+            <a class="sx-mega__link" href="login.html">Sign in</a>
+            <a class="sx-mega__link" href="register.html">Join Sovix</a>
+            <a class="sx-mega__link" href="forgot-password.html">Reset password</a>
+            <a class="sx-mega__link" href="help.html">Help centre</a>
+            <a class="sx-mega__link" href="contact.html">Contact us</a>
+            <a class="sx-mega__link" href="about.html">About</a>
+            <a class="sx-mega__link" href="careers.html">Careers</a>
+            <a class="sx-mega__link" href="privacy.html">Privacy</a>
+            <a class="sx-mega__link" href="terms.html">Terms</a>
+            <a class="sx-mega__link" href="pages.html">All pages</a>
+            <a class="sx-mega__link" href="404.html">Not found</a>
+          </div>
+            </div>
+            <div class="sx-mega__foot">
+              <i data-lucide="compass" class="ic-16"></i>
+              <span>46 pages, every one linked and working.</span>
+              <a class="btn btn-brand btn-sm" href="pages.html">All pages</a>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="sx-topbar__actions">
+        <div class="dropdown">
+          <button class="sx-iconbtn sx-iconbtn--plain" type="button" data-bs-toggle="dropdown"
+                  data-bs-offset="0,10" aria-expanded="false" aria-label="Your cart">
+          <i data-lucide="shopping-bag" class="ic-22"></i>
+          <span class="sx-dot sx-tnum" data-sx-cart-count>2</span>
+        </button>
+          <div class="dropdown-menu dropdown-menu-end sx-menu sx-minicart">
+            <h6 class="dropdown-header">Your cart</h6>
+            <ul class="sx-minicart__list" data-sx-minicart-list>
+              <li class="sx-minicart__row" data-sx-minicart-line data-sx-minicart-price="24">
+                <img src="assets/img/post/post_21.png" alt="" width="44" height="33">
+                <span class="sx-minicart__ident">
+                  <span class="sx-minicart__title">Quiet Interfaces — dot field pack</span>
+                  <span class="sx-meta">Personal licence</span>
+                </span>
+                <span class="sx-minicart__price">$24.00</span>
+              </li>
+              <li class="sx-minicart__row" data-sx-minicart-line data-sx-minicart-price="18">
+                <img src="assets/img/post/post_13.png" alt="" width="44" height="33">
+                <span class="sx-minicart__ident">
+                  <span class="sx-minicart__title">Night City — 12 skyline scenes</span>
+                  <span class="sx-meta">Personal licence</span>
+                </span>
+                <span class="sx-minicart__price">$18.00</span>
+              </li>
+            </ul>
+            <p class="sx-minicart__empty" data-sx-minicart-empty hidden>Your cart is empty.</p>
+            <div class="sx-minicart__foot"><span>Subtotal</span><span data-sx-minicart-total>$42.00</span></div>
+            <div class="sx-minicart__actions">
+              <a class="btn btn-quiet btn-sm" href="cart.html">View cart</a>
+              <a class="btn btn-brand btn-sm" href="checkout.html">Checkout</a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="sx-iconbtn sx-iconbtn--plain" type="button" data-bs-toggle="dropdown"
+                  data-bs-offset="0,10" aria-expanded="false" aria-label="Notifications">
+            <i data-lucide="bell" class="ic-22"></i>
+            <span class="sx-dot sx-tnum" data-sx-note-count>8</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end sx-menu sx-notemenu">
+            <div class="sx-notemenu__head">
+              <span class="sx-notemenu__title">Notifications</span>
+              <button class="sx-notemenu__read" type="button" data-sx-note-readall>Mark all read</button>
+            </div>
+            <div class="sx-notemenu__list" data-sx-notemenu-list>
+              <a class="sx-noteitem is-unread" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--love">
+                  <img src="assets/img/avatar/avatar-6.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="heart" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Nadia Hart</strong> reacted to your post about naming components.</span>
+                  <span class="sx-noteitem__time">12m</span>
+                </span>
+              </a>
+              <a class="sx-noteitem is-unread" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--insight">
+                  <img src="assets/img/avatar/avatar-2.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="message-circle" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Dev Iyer</strong> commented on your density write-up.</span>
+                  <span class="sx-noteitem__time">18m</span>
+                </span>
+              </a>
+              <a class="sx-noteitem is-unread" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--celebrate">
+                  <img src="assets/img/avatar/avatar-5.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="user-plus" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Mira Shah</strong> started following you.</span>
+                  <span class="sx-noteitem__time">1h</span>
+                </span>
+              </a>
+              <a class="sx-noteitem" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--love">
+                  <img src="assets/img/avatar/avatar-1.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="calendar" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Ana Costa</strong> invited you to Studio hours: critique night.</span>
+                  <span class="sx-noteitem__time">3h</span>
+                </span>
+              </a>
+            </div>
+            <a class="sx-notemenu__all" href="notifications.html">View all notifications</a>
+          </div>
+        </div>
+
+        <button class="sx-iconbtn sx-iconbtn--plain sx-theme-toggle" type="button"
+                data-sx-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+          <i data-lucide="sun" class="ic-22 sx-theme-toggle__sun"></i>
+          <i data-lucide="moon" class="ic-22 sx-theme-toggle__moon"></i>
+        </button>
+
+        <span class="sx-divider-y d-none d-sm-block"></span>
+
+        <div class="dropdown">
+          <button class="sx-bare-btn sx-cluster sx-cluster--tight" type="button"
+                  data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
+            <span class="sx-avatar sx-avatar--sm">
+              <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+              <span class="sx-avatar__presence sx-avatar__presence--online"></span>
+            </span>
+            <i data-lucide="chevron-down" class="ic-16 d-none d-lg-block"></i>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-end">
+            <h6 class="dropdown-header">Ravi Menon</h6>
+            <a class="dropdown-item" href="profile.html"><i data-lucide="user" class="ic-16"></i>Your profile</a>
+            <a class="dropdown-item" href="saved.html"><i data-lucide="bookmark" class="ic-16"></i>Saved posts</a>
+            <a class="dropdown-item" href="assistant.html"><i data-lucide="sparkles" class="ic-16"></i>Assistant</a>
+            <a class="dropdown-item" href="analytics.html"><i data-lucide="activity" class="ic-16"></i>Creator analytics</a>
+            <a class="dropdown-item" href="jobs.html"><i data-lucide="briefcase" class="ic-16"></i>Jobs</a>
+            <a class="dropdown-item" href="settings.html"><i data-lucide="settings" class="ic-16"></i>Settings</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="help.html"><i data-lucide="circle-help" class="ic-16"></i>Help centre</a>
+            <a class="dropdown-item" href="login.html"><i data-lucide="log-out" class="ic-16"></i>Sign out</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================= SHELL ====== -->
+  <div class="sx-shell">
+    <div class="container-xxl">
+      <div class="row g-4 justify-content-center">
+
+        <!-- ================================================ LEFT RAIL === -->
+        <aside class="col-lg-4 col-xl-3 d-none d-lg-block" aria-label="Your account and shortcuts">
+          <div class="sx-rail sx-stack">
+
+            <section class="sx-panel sx-me">
+              <h2 class="sx-sr-only">Your account</h2>
+              <img class="sx-me__cover" src="assets/img/cover/cover-city.png" alt="" width="1200" height="320">
+              <div class="sx-me__body">
+                <a class="sx-avatar sx-avatar--lg sx-me__avatar" href="profile.html">
+                  <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="56" height="56">
+                </a>
+                <div class="sx-cluster sx-cluster--tight justify-content-center mt-2">
+                  <a class="sx-name" href="profile.html">Ravi Menon</a>
+                  <i role="img" data-lucide="badge-check" class="ic-16 sx-verified" aria-label="Verified"></i>
+                </div>
+                <p class="sx-meta mb-0">Product designer · Portland</p>
+
+                <div class="sx-me__stats">
+                  <a class="text-decoration-none" href="network.html">
+                    <span class="sx-stat__num sx-tnum">1,284</span>
+                    <span class="sx-stat__label">Followers</span>
+                  </a>
+                  <a class="text-decoration-none" href="network.html">
+                    <span class="sx-stat__num sx-tnum">318</span>
+                    <span class="sx-stat__label">Following</span>
+                  </a>
+                  <a class="text-decoration-none" href="profile.html">
+                    <span class="sx-stat__num sx-tnum">96</span>
+                    <span class="sx-stat__label">Posts</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <nav class="sx-panel sx-panel__body--tight" aria-label="Shortcuts">
+              <div class="sx-nav">
+                <a class="sx-nav__link is-active" href="index-2.html" aria-current="page">
+                  <i data-lucide="house" class="ic-20"></i>Home
+                </a>
+                <a class="sx-nav__link" href="explore.html">
+                  <i data-lucide="compass" class="ic-20"></i>Explore
+                </a>
+                <a class="sx-nav__link" href="assistant.html">
+                  <i data-lucide="sparkles" class="ic-20"></i>Assistant
+                  <span class="sx-nav__count">New</span>
+                </a>
+                <a class="sx-nav__link" href="create.html">
+                  <i data-lucide="wand-sparkles" class="ic-20"></i>Create
+                </a>
+                <a class="sx-nav__link" href="creations.html">
+                  <i data-lucide="images" class="ic-20"></i>Creations
+                </a>
+                <a class="sx-nav__link" href="store.html">
+                  <i data-lucide="shopping-bag" class="ic-20"></i>Store
+                </a>
+                <a class="sx-nav__link" href="groups.html">
+                  <i data-lucide="hash" class="ic-20"></i>Groups
+                  <span class="sx-nav__count">2 new</span>
+                </a>
+                <a class="sx-nav__link" href="messages.html">
+                  <i data-lucide="message-circle" class="ic-20"></i>Messages
+                  <span class="sx-nav__count">3</span>
+                </a>
+                <a class="sx-nav__link" href="network.html">
+                  <i data-lucide="users" class="ic-20"></i>Network
+                </a>
+                <a class="sx-nav__link" href="saved.html">
+                  <i data-lucide="bookmark" class="ic-20"></i>Saved
+                </a>
+                <a class="sx-nav__link" href="calendar.html">
+                  <i data-lucide="calendar-days" class="ic-20"></i>Calendar
+                </a>
+                <a class="sx-nav__link" href="todo.html">
+                  <i data-lucide="list-checks" class="ic-20"></i>To do
+                </a>
+                <a class="sx-nav__link" href="events.html">
+                  <i data-lucide="calendar" class="ic-20"></i>Events
+                </a>
+                <a class="sx-nav__link" href="jobs.html">
+                  <i data-lucide="briefcase" class="ic-20"></i>Jobs
+                  <span class="sx-nav__count">5 new</span>
+                </a>
+              </div>
+            </nav>
+
+            <section class="sx-panel">
+              <header class="sx-panel__head">
+                <h2 class="sx-panel__title">Your spaces</h2>
+                <a class="sx-meta ms-auto text-decoration-none" href="spaces.html">Manage</a>
+              </header>
+              <ul class="sx-list-plain">
+                <li>
+                  <a class="sx-person text-decoration-none" href="space.html">
+                    <span class="sx-avatar sx-avatar--sm"><img src="assets/img/avatar/avatar-6.png" alt="" width="34" height="34"></span>
+                    <span class="sx-person__ident">
+                      <span class="sx-name d-block sx-truncate">Type &amp; Lettering</span>
+                      <span class="sx-meta">42 posts today</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="sx-person text-decoration-none" href="space.html">
+                    <span class="sx-avatar sx-avatar--sm"><img src="assets/img/avatar/avatar-4.png" alt="" width="34" height="34"></span>
+                    <span class="sx-person__ident">
+                      <span class="sx-name d-block sx-truncate">Indie Hardware</span>
+                      <span class="sx-meta">9 posts today</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="sx-person text-decoration-none" href="space.html">
+                    <span class="sx-avatar sx-avatar--sm"><img src="assets/img/avatar/avatar-1.png" alt="" width="34" height="34"></span>
+                    <span class="sx-person__ident">
+                      <span class="sx-name d-block sx-truncate">Ship It Weekly</span>
+                      <span class="sx-meta">Live thread open</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="sx-panel__foot">
+                <a class="sx-panel__link" href="spaces.html">Find more spaces<i data-lucide="arrow-right" class="ic-16"></i></a>
+              </div>
+            </section>
+
+          </div>
+        </aside>
+
+        <!-- ===================================================== FEED === -->
+        <main class="col-lg-8 col-xl-6" id="feed">
+          <h1 class="sx-sr-only">Home feed</h1>
+
+          <div class="sx-feed" data-sx-feed-root>
+
+            <!-- Stories -->
+            <section class="sx-panel sx-panel__body--tight" aria-label="Stories from your circle" data-sx-stories>
+              <div class="sx-stories">
+                <button class="sx-iconbtn sx-iconbtn--sm sx-stories__arrow" type="button"
+                        data-sx-stories-nav="prev" aria-label="Scroll stories left" hidden>
+                  <i data-lucide="chevron-left" class="ic-18"></i>
+                </button>
+
+                <div class="sx-stories__track" data-sx-stories-track>
+                  <button class="sx-story sx-story--add" type="button" data-bs-toggle="modal" data-bs-target="#sxAddStory">
+                    <span class="sx-story__ring">
+                      <img src="assets/img/avatar/avatar-9.png" alt="" width="68" height="68">
+                      <span class="sx-story__plus"><i data-lucide="plus" class="ic-14"></i></span>
+                    </span>
+                    <span class="sx-story__name">Add yours</span>
+                  </button>
+                  <a class="sx-story text-decoration-none" href="storycc7a.html?u=nadia" aria-label="Story by Nadia">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-6.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">Nadia</span>
+                  </a>
+                  <a class="sx-story text-decoration-none" href="storyc656.html?u=leo" aria-label="Story by Leo">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-4.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">Leo</span>
+                  </a>
+                  <a class="sx-story text-decoration-none" href="story96fb.html?u=mira" aria-label="Story by Mira">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-5.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">Mira</span>
+                  </a>
+                  <a class="sx-story is-seen text-decoration-none" href="storyfe7e.html?u=tomas" aria-label="Story by Tomas">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-8.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">Tomas</span>
+                  </a>
+                  <a class="sx-story text-decoration-none" href="story02d4.html?u=june" aria-label="Story by June">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-3.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">June</span>
+                  </a>
+                  <a class="sx-story is-seen text-decoration-none" href="story489d.html?u=ana" aria-label="Story by Ana">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-1.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">Ana</span>
+                  </a>
+                  <a class="sx-story text-decoration-none" href="story5fd5.html?u=dev" aria-label="Story by Dev">
+                    <span class="sx-story__ring"><img src="assets/img/avatar/avatar-2.png" alt="" width="68" height="68"></span>
+                    <span class="sx-story__name">Dev</span>
+                  </a>
+                </div>
+
+                <button class="sx-iconbtn sx-iconbtn--sm sx-stories__arrow" type="button"
+                        data-sx-stories-nav="next" aria-label="Scroll stories right">
+                  <i data-lucide="chevron-right" class="ic-18"></i>
+                </button>
+              </div>
+            </section>
+
+            <!-- Composer -->
+            <section class="sx-panel" aria-labelledby="composer-title">
+              <h2 class="sx-sr-only" id="composer-title">Write a post</h2>
+              <div class="sx-panel__body">
+                <div class="sx-composer__top">
+                  <span class="sx-avatar">
+                    <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="42" height="42">
+                  </span>
+                  <button class="sx-composer__trigger" type="button" data-sx-action="open-composer">
+                    What are you working on, Ravi?
+                  </button>
+                </div>
+
+                <div class="sx-composer__tools">
+                  <button class="sx-chip sx-chip--photo" type="button" data-sx-action="open-composer" data-sx-arg="photo">
+                    <i data-lucide="image" class="ic-18"></i><span>Photo</span>
+                  </button>
+                  <button class="sx-chip sx-chip--video" type="button" data-sx-action="open-composer" data-sx-arg="video">
+                    <i data-lucide="video" class="ic-18"></i><span>Video</span>
+                  </button>
+                  <button class="sx-chip sx-chip--poll" type="button" data-sx-action="open-composer" data-sx-arg="poll">
+                    <i data-lucide="chart-no-axes-column" class="ic-18"></i><span>Poll</span>
+                  </button>
+                  <button class="sx-chip sx-chip--event" type="button" data-sx-action="open-composer" data-sx-arg="event">
+                    <i data-lucide="calendar" class="ic-18"></i><span>Event</span>
+                  </button>
+
+                  <button class="btn btn-brand ms-auto" type="button" data-sx-action="open-composer">Post</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Feed filter -->
+            <div class="sx-cluster justify-content-between sx-feedbar" data-sx-feedbar>
+              <ul class="nav nav-pills sx-list-plain" role="tablist" aria-label="Sort the feed">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" type="button" role="tab" aria-selected="true" aria-controls="sx-panel-feed"
+                          data-sx-feed-sort="latest">Latest</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" type="button" role="tab" aria-selected="false" aria-controls="sx-panel-feed"
+                          data-sx-feed-sort="top">Top today</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" type="button" role="tab" aria-selected="false" aria-controls="sx-panel-feed"
+                          data-sx-feed-sort="following">Following</button>
+                </li>
+              </ul>
+
+              <div class="dropdown">
+                <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button"
+                        data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,6"
+                        aria-expanded="false" aria-label="Feed display settings">
+                  <i data-lucide="sliders-horizontal" class="ic-18"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end sx-menu">
+                  <h3 class="dropdown-header">Display</h3>
+                  <div class="sx-switchrow">
+                    <input class="form-check-input" type="checkbox" role="switch" id="set-reposts"
+                           data-sx-setting="reposts" checked>
+                    <label for="set-reposts">Show reposts</label>
+                  </div>
+                  <div class="sx-switchrow">
+                    <input class="form-check-input" type="checkbox" role="switch" id="set-compact"
+                           data-sx-setting="compact">
+                    <label for="set-compact">Compact density</label>
+                  </div>
+                  <div class="sx-switchrow">
+                    <input class="form-check-input" type="checkbox" role="switch" id="set-large"
+                           data-sx-setting="large">
+                    <label for="set-large">Larger post text</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Posts -->
+            <div class="sx-stack sx-feedlist" role="tabpanel" id="sx-panel-feed" data-sx-feed>
+
+              <!-- Post 1 — photo post with an open comment thread -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-nadia"
+                       data-sx-author="Nadia Hart" data-sx-handle="@nadiahart" data-sx-audience="public"
+                       data-sx-following="1" data-sx-mins="28" data-sx-score="2412"
+                       data-sx-comments="184" data-sx-shares="61">
+                <h2 class="sx-sr-only">Post by Nadia Hart</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-6.png" alt="Nadia Hart" width="42" height="42">
+                    <span class="sx-avatar__presence sx-avatar__presence--online"></span>
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Nadia Hart</a>
+                      <i role="img" data-lucide="badge-check" class="ic-16 sx-verified" aria-label="Verified"></i>
+                      <span class="sx-meta">@nadiahart</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>28m</span><span class="sx-sep">·</span>
+                      <i data-lucide="globe" class="ic-14"></i><span>Public</span>
+                      <span class="sx-sep">·</span><span>Type &amp; Lettering</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Nadia Hart's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Spent the evening mapping every dot in the wallpaper we shipped last spring. Turns out the density
+                    curve, not the colour, is what made it feel calm. Full breakdown in
+                    <a class="sx-hashtag" href="tag.html">#quietinterfaces</a>.</p>
+                </div>
+
+                <a class="sx-post__media" href="post.html">
+                  <img src="assets/img/post/post_5.png" alt="Grid of dots fading across a deep indigo field" width="1200" height="800">
+                </a>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--like"><i data-lucide="thumbs-up" class="ic-14"></i></span>
+                    <span class="sx-tally__pip sx-tally__pip--spark"><i data-lucide="zap" class="ic-14"></i></span>
+                    <span class="sx-tally__pip sx-tally__pip--heart"><i data-lucide="heart" class="ic-14"></i></span>
+                  </span>
+                  <span>2.4K</span>
+                  <span class="ms-auto">184 comments · 61 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn is-on" type="button" data-sx-react="like" aria-pressed="true">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="2412">2.4K</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" aria-expanded="true" data-sx-comments-toggle>
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+
+                <div class="sx-comments" data-sx-comments>
+                  <ul class="sx-list-plain" data-sx-comment-list>
+                    <li class="sx-comment">
+                      <span class="sx-avatar sx-avatar--sm">
+                        <img src="assets/img/avatar/avatar-2.png" alt="Dev Iyer" width="34" height="34">
+                      </span>
+                      <div>
+                        <div class="sx-comment__bubble">
+                          <a class="sx-name" href="profile.html">Dev Iyer</a>
+                          <p class="sx-comment__text">The density read is right. We tried the same thing with opacity and it just looked faded.</p>
+                        </div>
+                        <div class="sx-comment__tools">
+                          <button type="button">Like · 34</button>
+                          <button type="button">Reply</button>
+                          <span>18m</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="sx-comment">
+                      <span class="sx-avatar sx-avatar--sm">
+                        <img src="assets/img/avatar/avatar-5.png" alt="Mira Shah" width="34" height="34">
+                      </span>
+                      <div>
+                        <div class="sx-comment__bubble">
+                          <a class="sx-name" href="profile.html">Mira Shah</a>
+                          <p class="sx-comment__text">Saving this for the studio review on Thursday. Does the curve hold on a dark background?</p>
+                        </div>
+                        <div class="sx-comment__tools">
+                          <button type="button">Like · 12</button>
+                          <button type="button">Reply</button>
+                          <span>9m</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <form class="sx-reply" data-sx-reply>
+                    <span class="sx-avatar sx-avatar--sm">
+                      <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+                    </span>
+                    <label class="sx-sr-only" for="reply-1">Write a comment</label>
+                    <input class="sx-reply__field" id="reply-1" type="text"
+                           placeholder="Write a comment" data-sx-reply-field>
+                    <button class="btn btn-soft" type="submit">Reply</button>
+                  </form>
+                </div>
+              </article>
+
+              <!-- Post 2 — poll -->
+              <!-- Multi-image post, grid layout -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-june-grid"
+                       data-sx-author="June Park" data-sx-handle="@junepark" data-sx-audience="public"
+                       data-sx-following="1" data-sx-mins="120" data-sx-score="1102"
+                       data-sx-comments="63" data-sx-shares="12">
+                <h2 class="sx-sr-only">Post by June Park</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html" tabindex="-1" aria-hidden="true">
+                    <img src="assets/img/avatar/avatar-3.png" alt="June Park" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">June Park</a>
+                      <span class="sx-meta">@junepark</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>2h</span><span class="sx-sep">·</span>
+                      <i data-lucide="globe" class="ic-14"></i><span>Public</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for June Park's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Four rolls back from the lab. Same walk, four different mornings — I keep
+                    going back because the light never repeats.</p>
+                </div>
+
+                <div class="sx-media-grid sx-media-grid--4">
+                  <button class="sx-media-cell" type="button" data-sx-action="lightbox" data-sx-index="0">
+                    <img src="assets/img/post/post_6.png" alt="Mist settling into a green valley at dusk" width="800" height="800" loading="lazy">
+                  </button>
+                  <button class="sx-media-cell" type="button" data-sx-action="lightbox" data-sx-index="1">
+                    <img src="assets/img/post/post_7.png" alt="A path winding between green hills under a wide sky" width="800" height="800" loading="lazy">
+                  </button>
+                  <button class="sx-media-cell" type="button" data-sx-action="lightbox" data-sx-index="2">
+                    <img src="assets/img/post/post_8.png" alt="A wide waterfall spilling into turquoise water" width="800" height="800" loading="lazy">
+                  </button>
+                  <button class="sx-media-cell" type="button" data-sx-action="lightbox" data-sx-index="3">
+                    <img src="assets/img/post/post_9.png" alt="Sunrise over hills with a steaming mug in the foreground" width="800" height="800" loading="lazy">
+                    <span class="sx-media-cell__more">+2</span>
+                  </button>
+                </div>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--like"><i data-lucide="thumbs-up" class="ic-14"></i></span>
+                    <span class="sx-tally__pip sx-tally__pip--heart"><i data-lucide="heart" class="ic-14"></i></span>
+                  </span>
+                  <span>1.1K</span>
+                  <span class="ms-auto">63 comments · 12 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="1102">1.1K</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" data-sx-comments-toggle aria-expanded="false">
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Multi-image post, slider layout -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-tomas-slider"
+                       data-sx-author="Tomas Oyelaran" data-sx-handle="@tomaso" data-sx-audience="group"
+                       data-sx-following="1" data-sx-mins="240" data-sx-score="846"
+                       data-sx-comments="41" data-sx-shares="9">
+                <h2 class="sx-sr-only">Post by Tomas Oyelaran</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html" tabindex="-1" aria-hidden="true">
+                    <img src="assets/img/avatar/avatar-8.png" alt="Tomas Oyelaran" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Tomas Oyelaran</a>
+                      <span class="sx-meta">@tomaso</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>4h</span><span class="sx-sep">·</span>
+                      <i data-lucide="users" class="ic-14"></i><span>Small Runs Club</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Tomas Oyelaran's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Swipe through the set. Shot in the rain on purpose — the traffic lights do
+                    all the work once the street is wet.</p>
+                </div>
+
+                <div class="sx-slider" data-sx-slider>
+                  <div class="sx-slider__track" data-sx-slider-track>
+                    <figure class="sx-slider__slide">
+                      <img src="assets/img/story/8.png" alt="A photographer on a rainy street lit by traffic lights" width="1200" height="800" loading="lazy">
+                    </figure>
+                    <figure class="sx-slider__slide">
+                      <img src="assets/img/story/1.png" alt="Tall buildings lit up against a violet night sky" width="1200" height="800" loading="lazy">
+                    </figure>
+                    <figure class="sx-slider__slide">
+                      <img src="assets/img/story/3.png" alt="A desk lamp lighting sheets of work on a studio table" width="1200" height="800" loading="lazy">
+                    </figure>
+                    <figure class="sx-slider__slide">
+                      <img src="assets/img/story/6.png" alt="A board and hand tools laid out on a workbench" width="1200" height="800" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <button class="sx-slider__nav sx-slider__nav--prev" type="button" data-sx-slider-nav="prev" aria-label="Previous image">
+                    <i data-lucide="chevron-left" class="ic-20"></i>
+                  </button>
+                  <button class="sx-slider__nav sx-slider__nav--next" type="button" data-sx-slider-nav="next" aria-label="Next image">
+                    <i data-lucide="chevron-right" class="ic-20"></i>
+                  </button>
+                  <span class="sx-slider__count" data-sx-slider-count>1 / 4</span>
+                </div>
+                <div class="sx-slider__dots" data-sx-slider-dots aria-hidden="true"></div>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--heart"><i data-lucide="heart" class="ic-14"></i></span>
+                  </span>
+                  <span>846</span>
+                  <span class="ms-auto">41 comments · 9 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="846">846</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" data-sx-comments-toggle aria-expanded="false">
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Video post -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-mira-video"
+                       data-sx-author="Mira Shah" data-sx-handle="@mirashah" data-sx-audience="public"
+                       data-sx-following="1" data-sx-mins="360" data-sx-score="3204"
+                       data-sx-comments="210" data-sx-shares="88">
+                <h2 class="sx-sr-only">Post by Mira Shah</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html" tabindex="-1" aria-hidden="true">
+                    <img src="assets/img/avatar/avatar-5.png" alt="Mira Shah" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Mira Shah</a>
+                      <span class="sx-meta">@mirashah</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>6h</span><span class="sx-sep">·</span>
+                      <i data-lucide="globe" class="ic-14"></i><span>Public</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Mira Shah's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Timelapse of the skyline pack coming together — twelve scenes, one evening,
+                    no undo history I am proud of.</p>
+                </div>
+                <button class="sx-embed" type="button" data-sx-embed
+                        data-sx-embed-src="https://www.youtube.com/embed/Q3C5wdFDcp0?autoplay=1"
+                        aria-label="Play the clip, 1 minute 3 seconds">
+                  <img src="assets/img/post/post_22.jpg" alt="A walkthrough of the Sovix jobs board, showing open roles and filters" width="1280" height="720" loading="lazy">
+                  <span class="sx-embed__play"><i data-lucide="play" class="ic-24"></i></span>
+                  <span class="sx-embed__time">1:03</span>
+                </button>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--spark"><i data-lucide="zap" class="ic-14"></i></span>
+                  </span>
+                  <span>3.2K</span>
+                  <span class="ms-auto">210 comments · 88 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="3204">3.2K</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" data-sx-comments-toggle aria-expanded="false">
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Audio post -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-dev-audio"
+                       data-sx-author="Dev Iyer" data-sx-handle="@deviyer" data-sx-audience="group"
+                       data-sx-following="1" data-sx-mins="540" data-sx-score="512"
+                       data-sx-comments="37" data-sx-shares="6">
+                <h2 class="sx-sr-only">Post by Dev Iyer</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html" tabindex="-1" aria-hidden="true">
+                    <img src="assets/img/avatar/avatar-2.png" alt="Dev Iyer" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Dev Iyer</a>
+                      <span class="sx-meta">@deviyer</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>9h</span><span class="sx-sep">·</span>
+                      <i data-lucide="users" class="ic-14"></i><span>Type &amp; Lettering</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Dev Iyer's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Two minutes on why we stopped animating the overshoot. Recorded on the walk
+                    home, so mind the traffic.</p>
+                </div>
+
+                <div class="sx-audio" data-sx-audio data-sx-audio-src="">
+                  <button class="sx-audio__play" type="button" data-sx-audio-toggle aria-label="Play the voice note">
+                    <i data-lucide="play" class="ic-20"></i>
+                  </button>
+                  <div class="sx-audio__body">
+                    <span class="sx-audio__title">Why the overshoot had to go</span>
+                    <div class="sx-audio__wave" data-sx-audio-wave aria-hidden="true"></div>
+                  </div>
+                  <span class="sx-audio__time" data-sx-audio-time>2:08</span>
+                </div>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--like"><i data-lucide="thumbs-up" class="ic-14"></i></span>
+                  </span>
+                  <span>512</span>
+                  <span class="ms-auto">37 comments · 6 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="512">512</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" data-sx-comments-toggle aria-expanded="false">
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+              </article>
+
+              <!-- Long text post -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-ana-long"
+                       data-sx-author="Ana Costa" data-sx-handle="@anacosta" data-sx-audience="public"
+                       data-sx-following="1" data-sx-mins="1440" data-sx-score="1904"
+                       data-sx-comments="128" data-sx-shares="44">
+                <h2 class="sx-sr-only">Post by Ana Costa</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html" tabindex="-1" aria-hidden="true">
+                    <img src="assets/img/avatar/avatar-1.png" alt="Ana Costa" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Ana Costa</a>
+                      <i role="img" data-lucide="badge-check" class="ic-16 sx-verified" aria-label="Verified"></i>
+                      <span class="sx-meta">@anacosta</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>1d</span><span class="sx-sep">·</span>
+                      <i data-lucide="globe" class="ic-14"></i><span>Public</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Ana Costa's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text sx-clamp" data-sx-clamp>We cut the onboarding survey from twelve questions to four
+                    and the completion rate went from 31% to 78%. That is the headline, but the interesting part is
+                    which eight we cut and why nobody wanted to be the one to cut them. Every question had a person
+                    behind it who could explain exactly why it mattered, and every one of those explanations was
+                    reasonable on its own. The problem was never any single question. It was that twelve reasonable
+                    questions add up to something nobody will finish. So we stopped arguing about which questions
+                    were good and started asking which four we would keep if we could only keep four. That turned
+                    a two month argument into a forty minute meeting, and the four we kept are the ones we now use
+                    to route people into the right first week. The eight we dropped are still written down. We just
+                    ask them later, when someone has a reason to answer.</p>
+                  <button class="sx-more" type="button" data-sx-more hidden>Show more</button>
+                </div>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--spark"><i data-lucide="zap" class="ic-14"></i></span>
+                    <span class="sx-tally__pip sx-tally__pip--like"><i data-lucide="thumbs-up" class="ic-14"></i></span>
+                  </span>
+                  <span>1.9K</span>
+                  <span class="ms-auto">128 comments · 44 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="1904">1.9K</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" data-sx-comments-toggle aria-expanded="false">
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-leo"
+                       data-sx-author="Leo Fontaine" data-sx-handle="@leofontaine" data-sx-audience="followers"
+                       data-sx-following="1" data-sx-mins="60" data-sx-score="308"
+                       data-sx-comments="12" data-sx-shares="4">
+                <h2 class="sx-sr-only">Post by Leo Fontaine</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-4.png" alt="Leo Fontaine" width="42" height="42">
+                    <span class="sx-avatar__presence sx-avatar__presence--away"></span>
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Leo Fontaine</a>
+                      <span class="sx-meta">@leofontaine</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>1h</span><span class="sx-sep">·</span>
+                      <i data-lucide="users" class="ic-14"></i><span>Indie Hardware</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Leo Fontaine's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Prototyping the enclosure this month. Which route would you take for a run of fifty units?</p>
+
+                  <div class="sx-poll" data-sx-poll>
+                    <button class="sx-poll__option" type="button" data-sx-poll-option data-sx-poll-pct="46" aria-pressed="false">
+                      <span class="sx-poll__fill"></span>
+                      <span class="sx-poll__label">Resin print, hand finish</span>
+                      <span class="sx-poll__pct sx-tnum" data-sx-poll-pct-label>Vote</span>
+                    </button>
+                    <button class="sx-poll__option" type="button" data-sx-poll-option data-sx-poll-pct="31" aria-pressed="false">
+                      <span class="sx-poll__fill"></span>
+                      <span class="sx-poll__label">CNC aluminium shell</span>
+                      <span class="sx-poll__pct sx-tnum" data-sx-poll-pct-label>Vote</span>
+                    </button>
+                    <button class="sx-poll__option" type="button" data-sx-poll-option data-sx-poll-pct="23" aria-pressed="false">
+                      <span class="sx-poll__fill"></span>
+                      <span class="sx-poll__label">Soft tooling, injection mould</span>
+                      <span class="sx-poll__pct sx-tnum" data-sx-poll-pct-label>Vote</span>
+                    </button>
+                  </div>
+
+                  <p class="sx-meta mt-2 mb-0" data-sx-poll-tally="1204">1.2K votes · closes in 2 days</p>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="308">308</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" aria-expanded="false" data-sx-comments-toggle>
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+
+                <div class="sx-comments" data-sx-comments hidden>
+                  <ul class="sx-list-plain" data-sx-comment-list>
+                    <li class="sx-comment">
+                      <span class="sx-avatar sx-avatar--sm">
+                        <img src="assets/img/avatar/avatar-8.png" alt="Tomas Oyelaran" width="34" height="34">
+                      </span>
+                      <div>
+                        <div class="sx-comment__bubble">
+                          <a class="sx-name" href="profile.html">Tomas Oyelaran</a>
+                          <p class="sx-comment__text">Fifty units is soft tooling territory. The unit cost crosses over around forty in my experience.</p>
+                        </div>
+                        <div class="sx-comment__tools">
+                          <button type="button">Like · 21</button>
+                          <button type="button">Reply</button>
+                          <span>34m</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <form class="sx-reply" data-sx-reply>
+                    <span class="sx-avatar sx-avatar--sm">
+                      <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+                    </span>
+                    <label class="sx-sr-only" for="reply-2">Write a comment</label>
+                    <input class="sx-reply__field" id="reply-2" type="text"
+                           placeholder="Write a comment" data-sx-reply-field>
+                    <button class="btn btn-soft" type="submit">Reply</button>
+                  </form>
+                </div>
+              </article>
+
+              <!-- Post 3 — photo post -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-leo-bench"
+                       data-sx-author="Leo Fontaine" data-sx-handle="@leofontaine" data-sx-audience="public"
+                       data-sx-following="1" data-sx-mins="90" data-sx-score="1187"
+                       data-sx-comments="64" data-sx-shares="23">
+                <h2 class="sx-sr-only">Post by Leo Fontaine</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-4.png" alt="Leo Fontaine" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Leo Fontaine</a>
+                      <span class="sx-meta">@leofontaine</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>1h 30m</span><span class="sx-sep">·</span>
+                      <i data-lucide="globe" class="ic-14"></i><span>Public</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions"></div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Enclosure draft three, printed this morning. The corner radius is finally right and the board clears the standoffs by 0.4mm. Run of fifty starts Monday if the quote holds.</p>
+                </div>
+
+              <a class="sx-post__media" href="post.html">
+                <img src="assets/img/post/post_26.png" alt="A circuit board, hand tools and fixings on a workbench" width="1200" height="800" loading="lazy">
+              </a>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="1187">1.2K</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" aria-expanded="false" data-sx-comments-toggle>
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+
+                <div class="sx-comments" data-sx-comments hidden>
+                  <ul class="sx-list-plain" data-sx-comment-list></ul>
+                  <form class="sx-reply" data-sx-reply>
+                    <span class="sx-avatar sx-avatar--sm">
+                      <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+                    </span>
+                    <label class="sx-sr-only" for="p-leo-bench-reply">Write a comment</label>
+                    <input class="sx-reply__field" id="p-leo-bench-reply" type="text"
+                           placeholder="Write a comment" data-sx-reply-field>
+                    <button class="btn btn-soft" type="submit">Reply</button>
+                  </form>
+                </div>
+              </article>
+
+              <!-- Post 4 — repost with a quoted post -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-mira" data-sx-kind="repost"
+                       data-sx-author="Mira Shah" data-sx-handle="@mirashah" data-sx-audience="followers"
+                       data-sx-following="1" data-sx-mins="120" data-sx-score="971"
+                       data-sx-comments="76" data-sx-shares="214">
+                <h2 class="sx-sr-only">Post by Mira Shah</h2>
+                <div class="sx-post__context">
+                  <i data-lucide="repeat-2" class="ic-16"></i>
+                  <span><a class="sx-strong" href="profile.html">Mira Shah</a> reposted this and added a note</span>
+                </div>
+
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-5.png" alt="Mira Shah" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Mira Shah</a>
+                      <i role="img" data-lucide="badge-check" class="ic-16 sx-verified" aria-label="Verified"></i>
+                      <span class="sx-meta">@mirashah</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>2h</span><span class="sx-sep">·</span>
+                      <i data-lucide="lock" class="ic-14"></i><span>Followers only</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <button class="sx-iconbtn sx-iconbtn--plain sx-iconbtn--sm" type="button" aria-label="More options for Mira Shah's post">
+                      <i data-lucide="more-horizontal" class="ic-18"></i>
+                    </button>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">This is the clearest thing I have read about naming things in a design system. We renamed
+                    eleven components after our review and support tickets dropped by a third.</p>
+                </div>
+
+                <blockquote class="sx-post__quote">
+                  <div class="sx-cluster sx-cluster--tight mb-2">
+                    <span class="sx-avatar sx-avatar--xs">
+                      <img src="assets/img/avatar/avatar-3.png" alt="June Park" width="28" height="28">
+                    </span>
+                    <a class="sx-name" href="profile.html">June Park</a>
+                    <span class="sx-meta">@junepark · 5h</span>
+                  </div>
+                  <p class="sx-post__text mb-0">Name a component for what a person controls, not for how it is built. Nobody manages a
+                    webhook payload — they manage notifications.</p>
+                </blockquote>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--like"><i data-lucide="thumbs-up" class="ic-14"></i></span>
+                    <span class="sx-tally__pip sx-tally__pip--spark"><i data-lucide="zap" class="ic-14"></i></span>
+                  </span>
+                  <span>971</span>
+                  <span class="ms-auto">76 comments · 214 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="971">971</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" aria-expanded="false" data-sx-comments-toggle>
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save is-on" type="button" data-sx-react="save" aria-pressed="true">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Saved</span>
+                  </button>
+                </div>
+
+                <div class="sx-comments" data-sx-comments hidden>
+                  <ul class="sx-list-plain" data-sx-comment-list></ul>
+                  <form class="sx-reply" data-sx-reply>
+                    <span class="sx-avatar sx-avatar--sm">
+                      <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+                    </span>
+                    <label class="sx-sr-only" for="reply-3">Write a comment</label>
+                    <input class="sx-reply__field" id="reply-3" type="text"
+                           placeholder="Be the first to comment" data-sx-reply-field>
+                    <button class="btn btn-soft" type="submit">Reply</button>
+                  </form>
+                </div>
+              </article>
+
+              <!-- Post 5 — audio -->
+              <article class="sx-panel sx-post" data-sx-post data-sx-post-id="p-tomas"
+                       data-sx-author="Tomas Oyelaran" data-sx-handle="@tomaso" data-sx-audience="public"
+                       data-sx-following="0" data-sx-mins="180" data-sx-score="430"
+                       data-sx-comments="29" data-sx-shares="8">
+                <h2 class="sx-sr-only">Post by Tomas Oyelaran</h2>
+                <header class="sx-post__head">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-8.png" alt="Tomas Oyelaran" width="42" height="42">
+                  </a>
+                  <div class="sx-post__ident">
+                    <div class="sx-post__byline">
+                      <a class="sx-name" href="profile.html">Tomas Oyelaran</a>
+                      <span class="sx-meta">@tomaso</span>
+                    </div>
+                    <div class="sx-post__submeta">
+                      <span>3h</span><span class="sx-sep">·</span>
+                      <i data-lucide="globe" class="ic-14"></i><span>Public</span>
+                    </div>
+                  </div>
+                  <div class="sx-post__actions">
+                    <span class="sx-tag sx-tag--amber"><i data-lucide="mic" class="ic-14"></i>Audio</span>
+                  </div>
+                </header>
+
+                <div class="sx-post__body">
+                  <p class="sx-post__text">Ten minutes on why our onboarding survey was lying to us — recorded on the walk home,
+                    so mind the traffic.</p>
+                </div>
+
+                <a class="sx-post__media" href="post.html">
+                  <img src="assets/img/post/post_24.png" alt="Bar chart of a recorded audio waveform" width="1200" height="800" loading="lazy">
+                </a>
+
+                <div class="sx-post__tally">
+                  <span class="sx-tally__icons">
+                    <span class="sx-tally__pip sx-tally__pip--spark"><i data-lucide="zap" class="ic-14"></i></span>
+                  </span>
+                  <span>430</span>
+                  <span class="ms-auto">29 comments · 8 reposts</span>
+                </div>
+
+                <div class="sx-pulse">
+                  <button class="sx-pulse__btn" type="button" data-sx-react="like" aria-pressed="false">
+                    <i data-lucide="thumbs-up" class="ic-18"></i>
+                    <span class="sx-pulse__count" data-sx-count="430">430</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="comment" aria-expanded="false" data-sx-comments-toggle>
+                    <i data-lucide="message-circle" class="ic-18"></i><span>Comment</span>
+                  </button>
+                  <button class="sx-pulse__btn" type="button" data-sx-react="share">
+                    <i data-lucide="repeat-2" class="ic-18"></i><span>Repost</span>
+                  </button>
+                  <button class="sx-pulse__btn sx-pulse__btn--save" type="button" data-sx-react="save" aria-pressed="false">
+                    <i data-lucide="bookmark" class="ic-18"></i><span>Save</span>
+                  </button>
+                </div>
+
+                <div class="sx-comments" data-sx-comments hidden>
+                  <ul class="sx-list-plain" data-sx-comment-list></ul>
+                  <form class="sx-reply" data-sx-reply>
+                    <span class="sx-avatar sx-avatar--sm">
+                      <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+                    </span>
+                    <label class="sx-sr-only" for="reply-4">Write a comment</label>
+                    <input class="sx-reply__field" id="reply-4" type="text"
+                           placeholder="Be the first to comment" data-sx-reply-field>
+                    <button class="btn btn-soft" type="submit">Reply</button>
+                  </form>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Loading placeholder -->
+            <div class="sx-panel sx-post" data-sx-feed-skeleton hidden>
+              <div class="sx-post__head">
+                <span class="sx-skel sx-skel--avatar"></span>
+                <div class="flex-grow-1">
+                  <div class="sx-skel sx-skel--title sx-skel--w40 mb-2"></div>
+                  <div class="sx-skel sx-skel--line-sm sx-skel--w60"></div>
+                </div>
+              </div>
+              <div class="sx-post__body">
+                <div class="sx-skel sx-skel--line sx-skel--w90 mb-2"></div>
+                <div class="sx-skel sx-skel--line sx-skel--w75"></div>
+              </div>
+              <div class="sx-skel sx-skel--media"></div>
+            </div>
+
+            <button class="btn btn-quiet w-100" type="button" data-sx-load-more>Show older posts</button>
+
+          </div>
+        </main>
+
+        <!-- =============================================== RIGHT RAIL === -->
+        <aside class="col-xl-3 d-none d-xl-block" aria-label="Suggestions and trends">
+          <div class="sx-rail sx-stack">
+
+            <section class="sx-panel">
+              <header class="sx-panel__head">
+                <h2 class="sx-panel__title">People who make things you like</h2>
+              </header>
+              <ul class="sx-list-plain">
+                <li class="sx-person">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-3.png" alt="June Park" width="42" height="42">
+                  </a>
+                  <div class="sx-person__ident">
+                    <div class="sx-cluster sx-cluster--tight">
+                      <a class="sx-name sx-truncate" href="profile.html">June Park</a>
+                      <i role="img" data-lucide="badge-check" class="ic-14 sx-verified" aria-label="Verified"></i>
+                    </div>
+                    <p class="sx-meta mb-0 sx-clamp-1">Identity systems · 3 mutual</p>
+                  </div>
+                  <button class="btn btn-brand btn-sm sx-person__action" type="button"
+                          data-sx-follow="June Park" aria-pressed="false">Follow</button>
+                </li>
+                <li class="sx-person">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-1.png" alt="Ana Costa" width="42" height="42">
+                  </a>
+                  <div class="sx-person__ident">
+                    <a class="sx-name d-block sx-truncate" href="profile.html">Ana Costa</a>
+                    <p class="sx-meta mb-0 sx-clamp-1">Ships weekly · 11 mutual</p>
+                  </div>
+                  <button class="btn btn-brand btn-sm sx-person__action" type="button"
+                          data-sx-follow="Ana Costa" aria-pressed="false">Follow</button>
+                </li>
+                <li class="sx-person">
+                  <a class="sx-avatar" href="profile.html">
+                    <img src="assets/img/avatar/avatar-2.png" alt="Dev Iyer" width="42" height="42">
+                  </a>
+                  <div class="sx-person__ident">
+                    <a class="sx-name d-block sx-truncate" href="profile.html">Dev Iyer</a>
+                    <p class="sx-meta mb-0 sx-clamp-1">Motion &amp; prototyping · 2 mutual</p>
+                  </div>
+                  <button class="btn btn-brand btn-sm sx-person__action" type="button"
+                          data-sx-follow="Dev Iyer" aria-pressed="false">Follow</button>
+                </li>
+              </ul>
+              <div class="sx-panel__foot">
+                <a class="sx-panel__link" href="network.html">See all suggestions<i data-lucide="arrow-right" class="ic-16"></i></a>
+              </div>
+            </section>
+
+            <section class="sx-panel">
+              <header class="sx-panel__head">
+                <h2 class="sx-panel__title">Moving in your circle</h2>
+                <i data-lucide="trending-up" class="ic-18 ms-auto text-body-tertiary"></i>
+              </header>
+              <div>
+                <a class="sx-trend text-decoration-none" href="tag.html">
+                  <span class="sx-trend__topic">#quietinterfaces</span>
+                  <span class="sx-trend__meta">1,204 posts · 312 today</span>
+                </a>
+                <a class="sx-trend text-decoration-none" href="tag.html">
+                  <span class="sx-trend__topic">Soft tooling for small runs</span>
+                  <span class="sx-trend__meta">Discussed by 48 people you follow</span>
+                </a>
+                <a class="sx-trend text-decoration-none" href="tag.html">
+                  <span class="sx-trend__topic">#typecrit</span>
+                  <span class="sx-trend__meta">860 posts · 96 today</span>
+                </a>
+                <a class="sx-trend text-decoration-none" href="tag.html">
+                  <span class="sx-trend__topic">Portfolio reviews, open call</span>
+                  <span class="sx-trend__meta">Closes Friday · 22 slots left</span>
+                </a>
+              </div>
+            </section>
+
+            <section class="sx-panel sx-panel__body">
+              <span class="sx-live"><span class="sx-live__pip"></span>Live now</span>
+              <h2 class="sx-t-h4 mt-2 mb-1">Studio hours: critique night</h2>
+              <p class="sx-meta mb-3">Ana Costa and four others are reviewing work in progress. Bring one screen.</p>
+              <div class="sx-cluster">
+                <span class="sx-avatar-stack">
+                  <span class="sx-avatar sx-avatar--xs"><img src="assets/img/avatar/avatar-1.png" alt="Ana Costa" width="28" height="28"></span>
+                  <span class="sx-avatar sx-avatar--xs"><img src="assets/img/avatar/avatar-3.png" alt="June Park" width="28" height="28"></span>
+                  <span class="sx-avatar sx-avatar--xs"><img src="assets/img/avatar/avatar-2.png" alt="Dev Iyer" width="28" height="28"></span>
+                </span>
+                <span class="sx-meta">+ 138 listening</span>
+                <a class="btn btn-brand btn-sm ms-auto" href="events.html">Join room</a>
+              </div>
+            </section>
+
+            <nav class="sx-footer-nav" aria-label="Footer">
+              <a href="about.html">About</a>
+              <a href="help.html">Help</a>
+              <a href="privacy.html">Privacy</a>
+              <a href="terms.html">Terms</a>
+              <a href="careers.html">Careers</a>
+              <span class="sx-meta">© 2026 Sovix</span>
+            </nav>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="sx-foot">
+    <div class="container-xxl sx-foot__inner">
+      <p class="sx-foot__copy">© 2026 <strong>Sovix</strong>. All rights reserved.</p>
+      <nav class="sx-foot__nav" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="help.html">Help</a>
+      </nav>
+    </div>
+  </footer>
+  <!-- ================================================ MOBILE TABBAR ==== -->
+  <nav class="sx-tabbar" aria-label="Primary, mobile">
+    <a class="sx-tabbar__link is-active" href="index-2.html" aria-current="page">
+      <i data-lucide="house" class="ic-22"></i>Home
+    </a>
+    <a class="sx-tabbar__link" href="explore.html">
+      <i data-lucide="compass" class="ic-22"></i>Explore
+    </a>
+    <button class="sx-tabbar__link" type="button" data-sx-action="open-composer">
+      <i data-lucide="square-pen" class="ic-22"></i>Post
+    </button>
+    <a class="sx-tabbar__link" href="messages.html">
+      <i data-lucide="message-circle" class="ic-22"></i>Chat
+    </a>
+    <a class="sx-tabbar__link" href="profile.html">
+      <i data-lucide="user" class="ic-22"></i>You
+    </a>
+  </nav>
+
+  <button class="sx-jump" type="button" data-sx-jump>
+    <i data-lucide="arrow-up" class="ic-16"></i>New posts
+  </button>
+
+  <button class="sx-totop" type="button" data-sx-totop aria-label="Back to top">
+    <i data-lucide="arrow-up" class="ic-20"></i>
+  </button>
+  <div class="sx-toast-wrap" aria-live="polite" data-sx-toasts></div>
+
+
+  <!-- ====================================================== MODALS ====== -->
+
+  <!-- Create / edit post -->
+  <div class="modal fade sx-cp" role="dialog" id="sxCompose" tabindex="-1" aria-labelledby="sxComposeTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button class="sx-backlink" type="button" data-sx-action="cp-pane" data-sx-arg="compose"
+                  data-sx-cp-back aria-label="Back to the post" hidden>
+            <i data-lucide="arrow-left" class="ic-18"></i>
+          </button>
+          <h2 class="modal-title" id="sxComposeTitle" data-sx-cp-title>Create post</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form data-sx-cp-form>
+
+          <div class="modal-body" data-sx-cp-pane="compose">
+            <div class="sx-cp__author">
+              <span class="sx-avatar">
+                <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="42" height="42">
+              </span>
+              <div>
+                <span class="sx-name">Ravi Menon</span>
+                <button class="sx-audience-btn" type="button" data-sx-action="cp-pane" data-sx-arg="audience"
+                        data-sx-cp-audience aria-label="Choose who can see this post">
+                  <i data-lucide="globe" class="ic-14"></i>
+                  <span data-sx-cp-audience-label>Public</span>
+                  <i data-lucide="chevron-down" class="ic-14"></i>
+                </button>
+              </div>
+            </div>
+
+            <label class="sx-sr-only" for="cp-field">Write your post</label>
+            <textarea class="sx-cp__field" id="cp-field" data-sx-cp-field
+                      placeholder="What are you working on, Ravi?"></textarea>
+
+            <div class="sx-tagged" data-sx-cp-tags></div>
+
+            <p class="sx-cp__meter"><span class="sx-tnum" data-sx-cp-count>480</span> characters left</p>
+
+            <div class="sx-drop" data-sx-cp-drop hidden>
+              <button class="sx-drop__empty" type="button" data-sx-cp-browse data-sx-cp-empty>
+                <span class="sx-drop__icon"><i data-lucide="image" class="ic-20"></i></span>
+                Add photos or video
+                <span>Drop files here, or browse. Up to 25 MB each.</span>
+              </button>
+              <div class="sx-drop__grid" data-sx-cp-grid></div>
+            </div>
+
+            <label class="sx-sr-only" for="cp-file">Choose photos or video</label>
+            <input class="sx-sr-only" id="cp-file" type="file" multiple accept="image/*,video/*" data-sx-cp-file>
+
+            <div class="sx-builder" data-sx-cp-poll hidden>
+              <p class="sx-builder__head">
+                <i data-lucide="chart-no-axes-column" class="ic-16"></i> Poll
+                <button class="sx-iconbtn sx-iconbtn--sm" type="button" data-sx-action="cp-poll-close"
+                        aria-label="Remove the poll"><i data-lucide="x" class="ic-16"></i></button>
+              </p>
+              <div data-sx-poll-rows></div>
+              <div class="sx-builder__grid">
+                <button class="btn btn-quiet btn-sm" type="button" data-sx-poll-add>Add option</button>
+                <label class="sx-sr-only" for="cp-poll-days">How long the poll runs</label>
+                <select class="form-select form-select-sm" id="cp-poll-days" data-sx-poll-days>
+                  <option value="1">1 day</option>
+                  <option value="3" selected>3 days</option>
+                  <option value="7">1 week</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sx-builder" data-sx-cp-event hidden>
+              <p class="sx-builder__head">
+                <i data-lucide="calendar" class="ic-16"></i> Event
+                <button class="sx-iconbtn sx-iconbtn--sm" type="button" data-sx-action="cp-event-close"
+                        aria-label="Remove the event"><i data-lucide="x" class="ic-16"></i></button>
+              </p>
+              <div class="sx-builder__row">
+                <label class="sx-sr-only" for="cp-ev-title">Event name</label>
+                <input class="form-control" id="cp-ev-title" type="text" placeholder="Event name" data-sx-event-title>
+              </div>
+              <div class="sx-builder__grid">
+                <div>
+                  <label class="sx-sr-only" for="cp-ev-date">Starts</label>
+                  <input class="form-control" id="cp-ev-date" type="datetime-local" data-sx-event-date>
+                </div>
+                <div>
+                  <label class="sx-sr-only" for="cp-ev-place">Place or link</label>
+                  <input class="form-control" id="cp-ev-place" type="text" placeholder="Place or link" data-sx-event-place>
+                </div>
+              </div>
+            </div>
+
+            <div class="sx-cp__tools">
+              <span class="sx-cp__tools-label">Add to your post</span>
+              <button class="sx-chip sx-chip--photo" type="button" data-sx-action="cp-tool" data-sx-arg="media"
+                      data-bs-toggle="tooltip" data-bs-title="Photo or video" aria-label="Add a photo or video">
+                <i data-lucide="image" class="ic-18"></i>
+              </button>
+              <button class="sx-chip sx-chip--poll" type="button" data-sx-action="cp-tool" data-sx-arg="poll"
+                      data-bs-toggle="tooltip" data-bs-title="Poll" aria-label="Add a poll">
+                <i data-lucide="chart-no-axes-column" class="ic-18"></i>
+              </button>
+              <button class="sx-chip sx-chip--event" type="button" data-sx-action="cp-tool" data-sx-arg="event"
+                      data-bs-toggle="tooltip" data-bs-title="Event" aria-label="Add an event">
+                <i data-lucide="calendar" class="ic-18"></i>
+              </button>
+              <div class="dropdown">
+                <button class="sx-chip" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        aria-label="Tag people">
+                  <i data-lucide="at-sign" class="ic-18"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end sx-menu sx-modal-scroll" data-sx-cp-people></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body" data-sx-cp-pane="audience" hidden>
+            <p class="modal-title-sub mb-3">Who can see this post? You can change it later from the post menu.</p>
+            <div class="sx-optionlist" data-sx-cp-audience-list></div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-brand sx-cp__submit" type="submit" data-sx-cp-submit disabled>Post</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Who reacted -->
+  <div class="modal fade" role="dialog" id="sxReactors" tabindex="-1" aria-labelledby="sxReactorsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxReactorsTitle">Reactions</h2>
+            <p class="modal-title-sub mb-0" data-sx-reactor-sub>on this post</p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="sx-reactor-tabs" data-sx-reactor-tabs></div>
+          <label class="sx-sr-only" for="reactor-search">Search people who reacted</label>
+          <input class="form-control my-3" id="reactor-search" type="search" placeholder="Search by name"
+                 data-sx-reactor-search autocomplete="off">
+          <div class="sx-reactors" data-sx-reactor-list></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Share -->
+  <div class="modal fade" role="dialog" id="sxShare" tabindex="-1" aria-labelledby="sxShareTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxShareTitle">Share</h2>
+            <p class="modal-title-sub mb-0" data-sx-share-sub></p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="sx-sharegrid">
+            <button type="button" data-sx-share="repost"><i data-lucide="repeat-2" class="ic-20"></i>Repost</button>
+            <button type="button" data-sx-share="quote"><i data-lucide="square-pen" class="ic-20"></i>Quote</button>
+            <button type="button" data-sx-share="message"><i data-lucide="send" class="ic-20"></i>Message</button>
+            <button type="button" data-sx-share="space"><i data-lucide="hash" class="ic-20"></i>To space</button>
+            <button type="button" data-sx-share="copy"><i data-lucide="link" class="ic-20"></i>Copy link</button>
+            <button type="button" data-sx-share="embed"><i data-lucide="copy" class="ic-20"></i>Embed</button>
+            <button type="button" data-sx-share="email"><i data-lucide="mail" class="ic-20"></i>Email</button>
+            <button type="button" data-sx-share="more"><i data-lucide="more-horizontal" class="ic-20"></i>More</button>
+          </div>
+
+          <div class="sx-copyrow">
+            <label class="sx-sr-only" for="share-url">Link to this post</label>
+            <input class="form-control" id="share-url" type="text" readonly data-sx-share-url>
+            <button class="btn btn-soft" type="button" data-sx-share="copy">Copy</button>
+          </div>
+
+          <h3 class="sx-eyebrow mt-4 mb-2">Send to</h3>
+          <div class="sx-reactors" data-sx-share-people></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post audience -->
+  <div class="modal fade" role="dialog" id="sxAudience" tabindex="-1" aria-labelledby="sxAudienceTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxAudienceTitle">Post audience</h2>
+            <p class="modal-title-sub mb-0">This changes who can see the post from now on.</p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="sx-optionlist" data-sx-audience-list></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Report -->
+  <div class="modal fade" role="dialog" id="sxReport" tabindex="-1" aria-labelledby="sxReportTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxReportTitle">Report</h2>
+            <p class="modal-title-sub mb-0" data-sx-report-sub></p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="sx-meta">Pick the closest reason. A reviewer reads every report, and the author is not told who
+            sent it.</p>
+          <div class="sx-optionlist" data-sx-report-list></div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-quiet" type="button" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-brand" type="button" data-sx-report-submit disabled>Send report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm -->
+  <div class="modal fade" role="dialog" id="sxConfirm" tabindex="-1" aria-labelledby="sxConfirmTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="sxConfirmTitle" data-sx-confirm-title>Are you sure?</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0" data-sx-confirm-body></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-quiet" type="button" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-brand" type="button" data-sx-confirm-go>Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Media viewer -->
+  <!-- Add to your story -->
+  <div class="modal fade" role="dialog" id="sxAddStory" tabindex="-1" aria-labelledby="sxAddStoryTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <form data-sx-addstory novalidate>
+
+          <div class="modal-header">
+            <div>
+              <h2 class="modal-title" id="sxAddStoryTitle">Add to your story</h2>
+              <p class="modal-title-sub mb-0">Visible for 24 hours, then it goes quietly.</p>
+            </div>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="sx-optionlist" data-sx-story-kind>
+              <button class="sx-option is-picked" type="button" data-sx-kind="media">
+                <span class="sx-option__icon"><i data-lucide="image-plus" class="ic-18"></i></span>
+                <span>Photo or video<span class="sx-option__desc">Up to 30 seconds, any orientation.</span></span>
+                <span class="sx-option__mark"><i data-lucide="check" class="ic-18"></i></span>
+              </button>
+              <button class="sx-option" type="button" data-sx-kind="text">
+                <span class="sx-option__icon"><i data-lucide="type" class="ic-18"></i></span>
+                <span>Just words<span class="sx-option__desc">A line on a colour, no picture needed.</span></span>
+                <span class="sx-option__mark"><i data-lucide="check" class="ic-18"></i></span>
+              </button>
+            </div>
+
+            <!-- Media -->
+            <div data-sx-story-pane="media">
+              <label class="sx-storydrop" for="story-file" data-sx-story-drop>
+                <input class="sx-sr-only" id="story-file" type="file" accept="image/*,video/*" data-sx-story-file>
+                <span class="sx-storydrop__icon"><i data-lucide="upload" class="ic-24"></i></span>
+                <span class="sx-storydrop__lead" data-sx-story-dropname>Choose a photo or video</span>
+                <span class="sx-storydrop__hint">or drag it here — JPG, PNG, GIF or MP4, up to 30&nbsp;MB</span>
+              </label>
+
+              <figure class="sx-storydrop__preview" data-sx-story-preview hidden>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="The story you are about to post" data-sx-story-thumb>
+                <figcaption class="sx-cluster justify-content-between">
+                  <span class="sx-meta" data-sx-story-filemeta></span>
+                  <button class="btn btn-quiet btn-sm" type="button" data-sx-story-clear>Remove</button>
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- Text -->
+            <div data-sx-story-pane="text" hidden>
+              <div class="sx-field mt-3">
+                <label for="story-words">Your words</label>
+                <textarea class="form-control" id="story-words" rows="3" maxlength="140"
+                          placeholder="Shipping the thing at last." data-sx-story-words></textarea>
+                <p class="sx-meta mt-1 mb-0"><span data-sx-story-left>140</span> characters left</p>
+              </div>
+
+              <fieldset class="sx-field">
+                <legend>Background</legend>
+                <div class="sx-swatches" role="radiogroup" aria-label="Story background">
+                  <label class="sx-swatches__opt sx-swatches__opt--brand">
+                    <input type="radio" name="story-bg" value="brand" checked>
+                    <span aria-hidden="true"></span>
+                    <span class="sx-sr-only">Violet</span>
+                  </label>
+                  <label class="sx-swatches__opt sx-swatches__opt--amber">
+                    <input type="radio" name="story-bg" value="amber">
+                    <span aria-hidden="true"></span>
+                    <span class="sx-sr-only">Amber</span>
+                  </label>
+                  <label class="sx-swatches__opt sx-swatches__opt--teal">
+                    <input type="radio" name="story-bg" value="teal">
+                    <span aria-hidden="true"></span>
+                    <span class="sx-sr-only">Teal</span>
+                  </label>
+                  <label class="sx-swatches__opt sx-swatches__opt--ink">
+                    <input type="radio" name="story-bg" value="ink">
+                    <span aria-hidden="true"></span>
+                    <span class="sx-sr-only">Ink</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="sx-field mt-3">
+              <label for="story-caption">Caption</label>
+              <input class="form-control" id="story-caption" type="text" maxlength="120"
+                     placeholder="Say what it is" data-sx-story-caption>
+            </div>
+
+            <div class="sx-field">
+              <label for="story-who">Who can see it</label>
+              <select class="form-select" id="story-who" data-sx-story-who>
+                <option value="everyone">Everyone</option>
+                <option value="followers" selected>People who follow you</option>
+                <option value="close">Close friends</option>
+              </select>
+            </div>
+
+            <div class="sx-switchrow ps-0">
+              <input class="form-check-input" type="checkbox" id="story-replies" checked>
+              <label for="story-replies">Let people reply to this story.</label>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-quiet" type="button" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-brand" type="submit" data-sx-story-share>Share story</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade sx-lightbox" role="dialog" id="sxLightbox" tabindex="-1" aria-labelledby="sxLightboxTitle" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <h2 class="sx-sr-only" id="sxLightboxTitle">Media viewer</h2>
+        <button class="sx-lightbox__close" type="button" data-bs-dismiss="modal" aria-label="Close the viewer">
+          <i data-lucide="x" class="ic-20"></i>
+        </button>
+        <div class="sx-lightbox__layout">
+          <div class="sx-lightbox__media">
+            <div class="sx-lightbox__stage" data-sx-lightbox-stage></div>
+            <button class="sx-lightbox__nav sx-lightbox__nav--prev" type="button" data-sx-lightbox-nav="prev"
+                    aria-label="Previous"><i data-lucide="chevron-left" class="ic-22"></i></button>
+            <button class="sx-lightbox__nav sx-lightbox__nav--next" type="button" data-sx-lightbox-nav="next"
+                    aria-label="Next"><i data-lucide="chevron-right" class="ic-22"></i></button>
+          </div>
+          <aside class="sx-lightbox__side" data-sx-lightbox-side aria-label="Post, reactions and comments" hidden></aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/lucide/lucide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:06:33 GMT -->
+</html>

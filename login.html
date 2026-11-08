@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-sx-theme="light">
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to Sovix — a social network for people who make things.">
+  <meta name="author" content="Sovix">
+  <meta name="theme-color" content="#4b34d9">
+
+  <title>Sovix - Social Network &amp; Community HTML Template</title>
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/svg+xml">
+  <link rel="canonical" href="login.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sovix">
+  <meta property="og:title" content="Sign in — Sovix">
+  <meta property="og:description" content="Sign in to Sovix — a social network for people who make things.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <a class="sx-skip-link" href="#main">Skip to the main content</a>
+
+  <main class="sx-auth" id="main">
+      <div class="sx-auth__panel">
+        <div class="sx-auth__inner">
+        <a class="sx-brand" href="index-2.html">
+          <img class="sx-brand__mark" src="assets/img/logo.svg" alt="" width="36" height="36">
+          <span class="sx-brand__word">Sovix</span>
+        </a>
+          <h1 class="sx-auth__title">Sign in</h1>
+          <p class="sx-auth__sub">Pick up where you left off — you have 8 notifications and 3 unread messages.</p>
+
+          <form data-sx-auth-form data-sx-auth-next="index.html" data-sx-auth-busy="Signing in…" novalidate>
+            <div class="sx-field">
+              <label for="login-email">Email</label>
+              <input class="form-control" id="login-email" type="email" required autocomplete="email"
+                     placeholder="name@example.com">
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <div class="sx-field">
+              <label for="login-pass">Password</label>
+              <div class="sx-passwrap">
+                <input class="form-control" id="login-pass" type="password" required autocomplete="current-password"
+                       placeholder="Your password">
+                <button class="sx-passtoggle" type="button" data-sx-pass-toggle aria-label="Show password">
+                  <i data-lucide="eye" class="ic-18"></i>
+                </button>
+              </div>
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <div class="sx-cluster justify-content-between mb-3">
+              <div class="sx-switchrow ps-0">
+                <input class="form-check-input" type="checkbox" id="login-keep" checked>
+                <label for="login-keep">Keep me signed in</label>
+              </div>
+              <a class="sx-meta" href="forgot-password.html">Forgot password?</a>
+            </div>
+
+            <button class="btn btn-brand w-100" type="submit">Sign in</button>
+          </form>
+
+          <p class="sx-authsplit">or</p>
+
+          <div class="sx-oauth">
+            <button class="btn btn-quiet" type="button"><i data-lucide="chrome" class="ic-18"></i>Google</button>
+            <button class="btn btn-quiet" type="button"><i data-lucide="apple" class="ic-18"></i>Apple</button>
+          </div>
+
+          <p class="sx-auth__foot">New here? <a href="register.html">Create an account</a></p>
+          <p class="sx-auth__foot mt-2"><a href="pages.html">Browse all template pages</a></p>
+        </div>
+      </div>
+
+      <aside class="sx-auth__aside">
+        <p class="sx-auth__quote">“I posted an unfinished thing on a Tuesday and had three people pull it
+          apart by Wednesday. That is the whole point.”</p>
+        <div class="sx-auth__by">
+          <span class="sx-avatar sx-avatar--sm">
+            <img src="assets/img/avatar/avatar-6.png" alt="" width="34" height="34">
+          </span>
+          <div>
+            <span class="sx-strong d-block">Nadia Hart</span>
+            <span class="sx-meta">Type &amp; lettering, Rotterdam</span>
+          </div>
+        </div>
+        <div class="sx-auth__proof">
+          <div><strong>240K</strong><span>people who make things</span></div>
+          <div><strong>1,900</strong><span>spaces</span></div>
+          <div><strong>Daily</strong><span>critique rooms</span></div>
+        </div>
+      </aside>
+  </main>
+
+  <div class="sx-toast-wrap" aria-live="polite" data-sx-toasts></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/lucide/lucide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+</html>

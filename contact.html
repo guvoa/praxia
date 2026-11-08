@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" data-sx-theme="light">
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with the Sovix team — a person reads every message.">
+  <meta name="author" content="Sovix">
+  <meta name="theme-color" content="#4b34d9">
+
+  <title>Sovix - Social Network &amp; Community HTML Template</title>
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/svg+xml">
+  <link rel="canonical" href="about.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sovix">
+  <meta property="og:title" content="About Sovix — Sovix">
+  <meta property="og:description" content="What Sovix is for, who builds it, and how it makes money.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <a class="sx-skip-link" href="#main">Skip to the main content</a>
+
+  <header class="sx-plainbar">
+    <a class="sx-brand" href="index-2.html">
+      <img class="sx-brand__mark" src="assets/img/logo.svg" alt="" width="36" height="36">
+      <span class="sx-brand__word">Sovix</span>
+    </a>
+    <nav class="sx-plainbar__nav" aria-label="Site">
+      <a class="sx-nav__link d-none d-md-inline-flex" href="pages.html">All pages</a>
+      <a class="sx-nav__link d-none d-md-inline-flex" href="about.html">About</a>
+      <a class="sx-nav__link d-none d-md-inline-flex" href="help.html">Help</a>
+      <a class="btn btn-quiet btn-sm" href="login.html">Sign in</a>
+      <a class="btn btn-brand btn-sm" href="register.html">Join Sovix</a>
+    </nav>
+  </header>
+
+  <main class="sx-page" id="main">
+    <div class="sx-page__inner">
+      <h1 class="sx-t-h1">Contact us</h1>
+      <p class="sx-page__lede">A person reads every message. Most get an answer inside one working day, and
+        nothing here is routed to a bot first.</p>
+
+      <div class="sx-contact">
+        <section class="sx-panel sx-contact__form">
+          <header class="sx-panel__head">
+            <h2 class="sx-panel__title">Send a message</h2>
+          </header>
+
+          <div class="sx-panel__body">
+            <form data-sx-contact novalidate class="php-email-form" action="https://html.themiverse.com/sovix-demo/assets/contact.php" method="POST">
+              <div class="sx-field-grid">
+                <div class="sx-field">
+                  <label for="ct-name">Your name</label>
+                  <input class="form-control" id="ct-name" name="name" type="text" required autocomplete="name"
+                         placeholder="Ravi Menon" data-sx-contact-name>
+                  <div class="invalid-feedback">Tell us who you are.</div>
+                </div>
+                <div class="sx-field">
+                  <label for="ct-email">Email</label>
+                  <input class="form-control" id="ct-email" name="email" type="email" required autocomplete="email"
+                         placeholder="you@example.com" data-sx-contact-email>
+                  <div class="invalid-feedback">We need an address to reply to.</div>
+                </div>
+              </div>
+
+              <div class="sx-field">
+                <label for="ct-topic">What is it about</label>
+                <select class="form-select" id="ct-topic" name="topic" data-sx-contact-topic>
+                  <option value="account">My account</option>
+                  <option value="billing">Billing or a purchase</option>
+                  <option value="report">Reporting something</option>
+                  <option value="press">Press or partnerships</option>
+                  <option value="other" selected>Something else</option>
+                </select>
+              </div>
+
+              <div class="sx-field">
+                <label for="ct-message">Message</label>
+                <textarea class="form-control" id="ct-message" name="message" rows="6" required maxlength="1200"
+                          placeholder="What happened, and what you expected instead."
+                          data-sx-contact-message></textarea>
+                <div class="invalid-feedback">Tell us what is going on.</div>
+                <p class="sx-meta mt-1 mb-0"><span data-sx-contact-left>1200</span> characters left</p>
+              </div>
+
+              <div class="sx-switchrow ps-0">
+                <input class="form-check-input" type="checkbox" id="ct-consent" name="consent" value="yes" required>
+                <label for="ct-consent">I agree to the <a href="privacy.html">privacy notice</a>.</label>
+                <div class="invalid-feedback">Please agree before sending.</div>
+              </div>
+
+              <div class="sx-switchrow ps-0">
+                <input class="form-check-input" type="checkbox" id="ct-copy" name="copy" value="yes" checked>
+                <label for="ct-copy">Email me a copy of this message.</label>
+              </div>
+
+              <div class="sx-cluster justify-content-end mt-3">
+                <button class="btn btn-brand" type="submit">Send message</button>
+               <div class="sx-formstatus">
+                      <div class="loading">Loading...</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <aside class="sx-contact__side">
+          <section class="sx-panel sx-help-card">
+            <h2 class="sx-panel__title">Other ways to reach us</h2>
+            <ul class="sx-help-card__list">
+              <li><i data-lucide="life-buoy" class="ic-16"></i><a href="help.html">Help centre</a></li>
+              <li><i data-lucide="message-circle" class="ic-16"></i><a href="messages.html">Message support on Sovix</a></li>
+              <li><i data-lucide="shield" class="ic-16"></i><a href="privacy.html">Privacy questions</a></li>
+              <li><i data-lucide="briefcase" class="ic-16"></i><a href="careers.html">Working here</a></li>
+            </ul>
+          </section>
+
+          <section class="sx-panel sx-help-card">
+            <h2 class="sx-panel__title">Response times</h2>
+            <ul class="sx-contact__times">
+              <li><span>Account and billing</span><span class="sx-strong">1 working day</span></li>
+              <li><span>Reports and safety</span><span class="sx-strong">Within hours</span></li>
+              <li><span>Press and partnerships</span><span class="sx-strong">2–3 days</span></li>
+            </ul>
+            <p class="sx-meta mb-0">Weekends are slower. Anything about safety is picked up first, every day.</p>
+          </section>
+
+          <section class="sx-panel sx-help-card">
+            <h2 class="sx-panel__title">Where we are</h2>
+            <p class="sx-meta mb-0">Sovix is remote across four timezones, so there is no front desk to visit.
+              Post reaches us via the help centre.</p>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="sx-foot">
+    <div class="container-xxl sx-foot__inner">
+      <p class="sx-foot__copy">© 2026 <strong>Sovix</strong>. All rights reserved.</p>
+      <nav class="sx-foot__nav" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="sx-totop" type="button" data-sx-totop aria-label="Back to top">
+    <i data-lucide="arrow-up" class="ic-20"></i>
+  </button>
+  <div class="sx-toast-wrap" aria-live="polite" data-sx-toasts></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/lucide/lucide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+</html>

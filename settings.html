@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en" data-sx-theme="light">
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Account, privacy, notification, appearance and security settings for Sovix.">
+  <meta name="author" content="Sovix">
+  <meta name="theme-color" content="#4b34d9">
+
+  <title>Sovix - Social Network &amp; Community HTML Template</title>
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/svg+xml">
+  <link rel="canonical" href="settings.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sovix">
+  <meta property="og:title" content="Settings — Sovix">
+  <meta property="og:description" content="Account, privacy, notification, appearance and security settings for Sovix.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <a class="sx-skip-link" href="#main">Skip to the main content</a>
+
+  <!-- ====================================================== TOPBAR ====== -->
+  <header class="sx-topbar" data-sx-topbar>
+    <div class="container-xxl sx-topbar__inner">
+
+      <a class="sx-brand" href="index-2.html">
+        <img class="sx-brand__mark" src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span class="sx-brand__word">Sovix</span>
+      </a>
+
+      <button class="sx-iconbtn sx-iconbtn--plain sx-searchtoggle" type="button"
+              data-sx-search-toggle aria-expanded="false" aria-label="Search Sovix">
+        <i data-lucide="search" class="ic-22"></i>
+      </button>
+
+      <form class="sx-search" role="search" action="https://html.themiverse.com/sovix-demo/search.html" method="get" data-sx-search-panel>
+        <label class="sx-sr-only" for="q">Search Sovix</label>
+        <i class="sx-search__icon ic-18" data-lucide="search"></i>
+        <input class="form-control sx-search__input" id="q" name="q" type="search"
+               placeholder="Search people, spaces, tags" autocomplete="off" data-sx-search>
+        <kbd class="sx-search__hint">/</kbd>
+      </form>
+
+      <nav class="sx-topbar__nav" aria-label="Primary">
+        <a class="sx-tab" href="index-2.html" data-bs-toggle="tooltip" data-bs-title="Home">
+          <i data-lucide="house" class="ic-22"></i><span class="sx-sr-only">Home</span>
+        </a>
+        <a class="sx-tab" href="explore.html" data-bs-toggle="tooltip" data-bs-title="Explore">
+          <i data-lucide="compass" class="ic-22"></i><span class="sx-sr-only">Explore</span>
+        </a>
+        <a class="sx-tab" href="assistant.html" data-bs-toggle="tooltip" data-bs-title="Assistant">
+          <i data-lucide="sparkles" class="ic-22"></i><span class="sx-sr-only">Assistant</span>
+        </a>
+        <a class="sx-tab" href="network.html" data-bs-toggle="tooltip" data-bs-title="Network">
+          <i data-lucide="users" class="ic-22"></i><span class="sx-sr-only">Network</span>
+        </a>
+        <a class="sx-tab" href="messages.html" data-bs-toggle="tooltip" data-bs-title="Messages">
+          <i data-lucide="message-circle" class="ic-22"></i>
+          <span class="sx-dot sx-tnum">3</span><span class="sx-sr-only">Messages, 3 unread</span>
+        </a>
+      </nav>
+        <div class="dropdown sx-pagesmenu">
+          <button class="sx-tab" type="button" data-bs-toggle="dropdown" data-bs-offset="0,14"
+                  aria-expanded="false" aria-label="All pages">
+            <i data-lucide="layout-grid" class="ic-22"></i><span class="sx-sr-only">All pages</span>
+          </button>
+          <div class="dropdown-menu sx-menu sx-mega">
+            <div class="sx-mega__grid">
+          <div>
+            <p class="sx-mega__title">Feed</p>
+            <a class="sx-mega__link" href="index-2.html">Home feed</a>
+            <a class="sx-mega__link" href="post.html">Post detail</a>
+            <a class="sx-mega__link" href="tag.html">Tag page</a>
+            <a class="sx-mega__link" href="search.html">Search results</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">People</p>
+            <a class="sx-mega__link" href="profile.html">Profile</a>
+            <a class="sx-mega__link" href="network.html">Your network</a>
+            <a class="sx-mega__link" href="messages.html">Messages</a>
+            <a class="sx-mega__link" href="messages-group.html">Group chat</a>
+            <a class="sx-mega__link" href="notifications.html">Notifications</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Community</p>
+            <a class="sx-mega__link" href="groups.html">Groups</a>
+            <a class="sx-mega__link" href="group.html">Group detail</a>
+            <a class="sx-mega__link" href="group-settings.html">Group settings</a>
+            <a class="sx-mega__link" href="spaces.html">Spaces</a>
+            <a class="sx-mega__link" href="space.html">Space detail</a>
+            <a class="sx-mega__link" href="events.html">Events</a>
+            <a class="sx-mega__link" href="calendar.html">Calendar</a>
+            <a class="sx-mega__link" href="todo.html">To do</a>
+            <a class="sx-mega__link" href="event.html">Event detail</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Discover</p>
+            <a class="sx-mega__link" href="explore.html">Explore</a>
+            <a class="sx-mega__link" href="gallery.html">Gallery</a>
+            <a class="sx-mega__link" href="blog.html">Blog</a>
+            <a class="sx-mega__link" href="blog-post.html">Blog post</a>
+            <a class="sx-mega__link" href="saved.html">Saved</a>
+            <a class="sx-mega__link" href="story.html">Story viewer</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Assistant</p>
+            <a class="sx-mega__link" href="assistant.html">Assistant chat</a>
+            <a class="sx-mega__link" href="ai-tools.html">AI tools</a>
+            <a class="sx-mega__link" href="creations.html">AI creations</a>
+            <a class="sx-mega__link" href="creation.html">Creation detail</a>
+            <a class="sx-mega__link" href="create.html">Create studio</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Store</p>
+            <a class="sx-mega__link" href="store.html">Store</a>
+            <a class="sx-mega__link" href="product.html">Product detail</a>
+            <a class="sx-mega__link" href="cart.html">Cart</a>
+            <a class="sx-mega__link" href="checkout.html">Checkout</a>
+            <a class="sx-mega__link" href="order-confirmation.html">Order complete</a>
+            <a class="sx-mega__link" href="purchases.html">Your purchases</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Work</p>
+            <a class="sx-mega__link" href="jobs.html">Jobs</a>
+            <a class="sx-mega__link" href="job.html">Job detail</a>
+            <a class="sx-mega__link" href="analytics.html">Analytics</a>
+            <a class="sx-mega__link is-active" href="settings.html" aria-current="page">Settings</a>
+          </div>
+          <div>
+            <p class="sx-mega__title">Account & site</p>
+            <a class="sx-mega__link" href="login.html">Sign in</a>
+            <a class="sx-mega__link" href="register.html">Join Sovix</a>
+            <a class="sx-mega__link" href="forgot-password.html">Reset password</a>
+            <a class="sx-mega__link" href="help.html">Help centre</a>
+            <a class="sx-mega__link" href="contact.html">Contact us</a>
+            <a class="sx-mega__link" href="about.html">About</a>
+            <a class="sx-mega__link" href="careers.html">Careers</a>
+            <a class="sx-mega__link" href="privacy.html">Privacy</a>
+            <a class="sx-mega__link" href="terms.html">Terms</a>
+            <a class="sx-mega__link" href="pages.html">All pages</a>
+            <a class="sx-mega__link" href="404.html">Not found</a>
+          </div>
+            </div>
+            <div class="sx-mega__foot">
+              <i data-lucide="compass" class="ic-16"></i>
+              <span>46 pages, every one linked and working.</span>
+              <a class="btn btn-brand btn-sm" href="pages.html">All pages</a>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="sx-topbar__actions">
+        <div class="dropdown">
+          <button class="sx-iconbtn sx-iconbtn--plain" type="button" data-bs-toggle="dropdown"
+                  data-bs-offset="0,10" aria-expanded="false" aria-label="Your cart">
+          <i data-lucide="shopping-bag" class="ic-22"></i>
+          <span class="sx-dot sx-tnum" data-sx-cart-count>2</span>
+        </button>
+          <div class="dropdown-menu dropdown-menu-end sx-menu sx-minicart">
+            <h6 class="dropdown-header">Your cart</h6>
+            <ul class="sx-minicart__list" data-sx-minicart-list>
+              <li class="sx-minicart__row" data-sx-minicart-line data-sx-minicart-price="24">
+                <img src="assets/img/post/post_21.png" alt="" width="44" height="33">
+                <span class="sx-minicart__ident">
+                  <span class="sx-minicart__title">Quiet Interfaces — dot field pack</span>
+                  <span class="sx-meta">Personal licence</span>
+                </span>
+                <span class="sx-minicart__price">$24.00</span>
+              </li>
+              <li class="sx-minicart__row" data-sx-minicart-line data-sx-minicart-price="18">
+                <img src="assets/img/post/post_13.png" alt="" width="44" height="33">
+                <span class="sx-minicart__ident">
+                  <span class="sx-minicart__title">Night City — 12 skyline scenes</span>
+                  <span class="sx-meta">Personal licence</span>
+                </span>
+                <span class="sx-minicart__price">$18.00</span>
+              </li>
+            </ul>
+            <p class="sx-minicart__empty" data-sx-minicart-empty hidden>Your cart is empty.</p>
+            <div class="sx-minicart__foot"><span>Subtotal</span><span data-sx-minicart-total>$42.00</span></div>
+            <div class="sx-minicart__actions">
+              <a class="btn btn-quiet btn-sm" href="cart.html">View cart</a>
+              <a class="btn btn-brand btn-sm" href="checkout.html">Checkout</a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="sx-iconbtn sx-iconbtn--plain" type="button" data-bs-toggle="dropdown"
+                  data-bs-offset="0,10" aria-expanded="false" aria-label="Notifications">
+            <i data-lucide="bell" class="ic-22"></i>
+            <span class="sx-dot sx-tnum" data-sx-note-count>8</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end sx-menu sx-notemenu">
+            <div class="sx-notemenu__head">
+              <span class="sx-notemenu__title">Notifications</span>
+              <button class="sx-notemenu__read" type="button" data-sx-note-readall>Mark all read</button>
+            </div>
+            <div class="sx-notemenu__list" data-sx-notemenu-list>
+              <a class="sx-noteitem is-unread" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--love">
+                  <img src="assets/img/avatar/avatar-6.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="heart" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Nadia Hart</strong> reacted to your post about naming components.</span>
+                  <span class="sx-noteitem__time">12m</span>
+                </span>
+              </a>
+              <a class="sx-noteitem is-unread" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--insight">
+                  <img src="assets/img/avatar/avatar-2.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="message-circle" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Dev Iyer</strong> commented on your density write-up.</span>
+                  <span class="sx-noteitem__time">18m</span>
+                </span>
+              </a>
+              <a class="sx-noteitem is-unread" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--celebrate">
+                  <img src="assets/img/avatar/avatar-5.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="user-plus" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Mira Shah</strong> started following you.</span>
+                  <span class="sx-noteitem__time">1h</span>
+                </span>
+              </a>
+              <a class="sx-noteitem" href="notifications.html">
+                <span class="sx-avatar sx-avatar--sm sx-react--love">
+                  <img src="assets/img/avatar/avatar-1.png" alt="" width="34" height="34">
+                  <span class="sx-noteitem__badge"><i data-lucide="calendar" class="ic-12"></i></span>
+                </span>
+                <span class="sx-noteitem__ident">
+                  <span class="sx-noteitem__text"><strong>Ana Costa</strong> invited you to Studio hours: critique night.</span>
+                  <span class="sx-noteitem__time">3h</span>
+                </span>
+              </a>
+            </div>
+            <a class="sx-notemenu__all" href="notifications.html">View all notifications</a>
+          </div>
+        </div>
+
+        <button class="sx-iconbtn sx-iconbtn--plain sx-theme-toggle" type="button"
+                data-sx-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+          <i data-lucide="sun" class="ic-22 sx-theme-toggle__sun"></i>
+          <i data-lucide="moon" class="ic-22 sx-theme-toggle__moon"></i>
+        </button>
+
+        <span class="sx-divider-y d-none d-sm-block"></span>
+
+        <div class="dropdown">
+          <button class="sx-bare-btn sx-cluster sx-cluster--tight" type="button"
+                  data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
+            <span class="sx-avatar sx-avatar--sm">
+              <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="34" height="34">
+              <span class="sx-avatar__presence sx-avatar__presence--online"></span>
+            </span>
+            <i data-lucide="chevron-down" class="ic-16 d-none d-lg-block"></i>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-end">
+            <h6 class="dropdown-header">Ravi Menon</h6>
+            <a class="dropdown-item" href="profile.html"><i data-lucide="user" class="ic-16"></i>Your profile</a>
+            <a class="dropdown-item" href="saved.html"><i data-lucide="bookmark" class="ic-16"></i>Saved posts</a>
+            <a class="dropdown-item" href="assistant.html"><i data-lucide="sparkles" class="ic-16"></i>Assistant</a>
+            <a class="dropdown-item" href="analytics.html"><i data-lucide="activity" class="ic-16"></i>Creator analytics</a>
+            <a class="dropdown-item" href="jobs.html"><i data-lucide="briefcase" class="ic-16"></i>Jobs</a>
+            <a class="dropdown-item" href="settings.html"><i data-lucide="settings" class="ic-16"></i>Settings</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" href="help.html"><i data-lucide="circle-help" class="ic-16"></i>Help centre</a>
+            <a class="dropdown-item" href="login.html"><i data-lucide="log-out" class="ic-16"></i>Sign out</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================= SHELL ====== -->
+  <div class="sx-shell">
+    <div class="container-xxl">
+      <div class="row g-4 justify-content-center">
+
+        <main class="col-12" id="main">
+          <h1 class="sx-sr-only">Settings</h1>
+
+          <section class="sx-panel sx-settings" data-sx-settings aria-label="Settings">
+
+            <nav class="sx-settings__nav" aria-label="Settings sections">
+              <div class="sx-nav">
+                <a class="sx-nav__link is-active" href="#account" data-sx-settings-nav="account" aria-current="page">
+                  <i data-lucide="user" class="ic-20"></i>Account
+                </a>
+                <a class="sx-nav__link" href="#privacy" data-sx-settings-nav="privacy">
+                  <i data-lucide="lock" class="ic-20"></i>Privacy
+                </a>
+                <a class="sx-nav__link" href="#notifications" data-sx-settings-nav="notifications">
+                  <i data-lucide="bell" class="ic-20"></i>Notifications
+                </a>
+                <a class="sx-nav__link" href="#appearance" data-sx-settings-nav="appearance">
+                  <i data-lucide="sun" class="ic-20"></i>Appearance
+                </a>
+                <a class="sx-nav__link" href="#assistant" data-sx-settings-nav="assistant">
+                  <i data-lucide="sparkles" class="ic-20"></i>AI assistant
+                </a>
+                <a class="sx-nav__link" href="#security" data-sx-settings-nav="security">
+                  <i data-lucide="shield" class="ic-20"></i>Security
+                </a>
+              </div>
+            </nav>
+
+            <div class="sx-settings__body">
+
+              <div data-sx-settings-panel="account">
+                <h2 class="sx-t-h3" tabindex="-1">Account</h2>
+                <p class="sx-meta">This is what people see when they land on your profile.</p>
+
+                <form class="sx-setgroup" data-sx-settings-form>
+                  <div class="sx-field-grid">
+                    <div class="sx-field">
+                      <label for="s-name">Display name</label>
+                      <input class="form-control" id="s-name" type="text" value="Ravi Menon">
+                    </div>
+                    <div class="sx-field">
+                      <label for="s-handle">Handle</label>
+                      <input class="form-control" id="s-handle" type="text" value="@ravimenon">
+                      <span class="form-text">You can change this twice a year.</span>
+                    </div>
+                  </div>
+                  <div class="sx-field">
+                    <label for="s-bio">Bio</label>
+                    <textarea class="form-control" id="s-bio" rows="3">Product designer. I work on the boring parts — naming, defaults, empty states — and write up what changed.</textarea>
+                  </div>
+                  <div class="sx-field-grid">
+                    <div class="sx-field">
+                      <label for="s-city">Location</label>
+                      <input class="form-control" id="s-city" type="text" value="Portland, OR">
+                    </div>
+                    <div class="sx-field">
+                      <label for="s-site">Website</label>
+                      <input class="form-control" id="s-site" type="url" value="https://ravimenon.work/">
+                    </div>
+                  </div>
+                  <button class="btn btn-brand" type="submit">Save changes</button>
+                </form>
+
+                <div class="sx-setgroup">
+                  <h3 class="sx-setgroup__title">Email</h3>
+                  <p class="sx-setgroup__desc">Used for sign-in and receipts. Never shown on your profile.</p>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Email address</span>
+                  <span class="sx-setrow__desc">ravi@ravimenon.work</span>
+                </div>
+                <div class="sx-setrow__control"><button class="btn btn-quiet btn-sm" type="button">Change</button></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Product updates</span>
+                  <span class="sx-setrow__desc">Occasional notes about new features. About one a month.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-updates" data-sx-pref="Product updates" checked><label class="sx-sr-only" for="s-updates">Product updates</label></div>
+              </div>
+                </div>
+
+                <div class="sx-danger-zone">
+                  <h3 class="sx-setgroup__title">Deactivate account</h3>
+                  <p class="sx-setgroup__desc mb-3">Your profile and posts stop being visible. You can come back
+                    within 30 days and everything returns.</p>
+                  <button class="btn btn-danger btn-sm" type="button">Deactivate account</button>
+                </div>
+              </div>
+
+              <div data-sx-settings-panel="privacy" hidden>
+                <h2 class="sx-t-h3" tabindex="-1">Privacy</h2>
+                <p class="sx-meta">Defaults for new posts, and who can reach you.</p>
+                <div class="sx-setgroup">
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Default post audience</span>
+                  <span class="sx-setrow__desc">Applies to new posts. You can change it per post.</span>
+                </div>
+                <div class="sx-setrow__control"><select class="form-select form-select-sm" data-sx-pref="Default audience" aria-label="Default post audience"><option selected>Public</option><option>Followers</option><option>Close circle</option><option>Only me</option></select></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Who can message you</span>
+                  <span class="sx-setrow__desc">Anyone can still reply to your public posts.</span>
+                </div>
+                <div class="sx-setrow__control"><select class="form-select form-select-sm" data-sx-pref="Message permissions" aria-label="Who can message you"><option selected>People I follow</option><option>Everyone</option><option>Nobody</option></select></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Show my activity status</span>
+                  <span class="sx-setrow__desc">Others see when you were last active.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-active" data-sx-pref="Activity status" checked><label class="sx-sr-only" for="s-active">Activity status</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Let search engines link to my profile</span>
+                  <span class="sx-setrow__desc">Turning this off removes you from results within a week.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-index" data-sx-pref="Search engine indexing"><label class="sx-sr-only" for="s-index">Search engine indexing</label></div>
+              </div>
+                </div>
+              </div>
+
+              <div data-sx-settings-panel="notifications" hidden>
+                <h2 class="sx-t-h3" tabindex="-1">Notifications</h2>
+                <p class="sx-meta">Everything is off by default except the things people expect.</p>
+                <div class="sx-setgroup">
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Reactions on your posts</span>
+                  <span class="sx-setrow__desc">In-app only. Grouped when there are many.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-nr" data-sx-pref="Reaction notifications" checked><label class="sx-sr-only" for="s-nr">Reaction notifications</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Comments and replies</span>
+                  <span class="sx-setrow__desc">Every comment on your posts, plus replies to you.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-nc" data-sx-pref="Comment notifications" checked><label class="sx-sr-only" for="s-nc">Comment notifications</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">New followers</span>
+                  <span class="sx-setrow__desc">One notification per person.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-nf" data-sx-pref="Follower notifications"><label class="sx-sr-only" for="s-nf">Follower notifications</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Space activity</span>
+                  <span class="sx-setrow__desc">Posts in spaces you moderate.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-ns" data-sx-pref="Space notifications" checked><label class="sx-sr-only" for="s-ns">Space notifications</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Email digest</span>
+                  <span class="sx-setrow__desc">A weekly summary on Sunday evening.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-ne" data-sx-pref="Email digest"><label class="sx-sr-only" for="s-ne">Email digest</label></div>
+              </div>
+                </div>
+              </div>
+
+              <div data-sx-settings-panel="appearance" hidden>
+                <h2 class="sx-t-h3" tabindex="-1">Appearance</h2>
+                <p class="sx-meta">Theme follows your system unless you pick one here.</p>
+                <div class="sx-setgroup">
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Theme</span>
+                  <span class="sx-setrow__desc">Light by default. Your choice is remembered on this device.</span>
+                </div>
+                <div class="sx-setrow__control"><select class="form-select form-select-sm" data-sx-theme-select aria-label="Theme"><option value="light">Light</option><option value="dark">Dark</option></select></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Compact density</span>
+                  <span class="sx-setrow__desc">Tighter cards, more posts on screen.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-dense" data-sx-pref="Compact density"><label class="sx-sr-only" for="s-dense">Compact density</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Larger post text</span>
+                  <span class="sx-setrow__desc">Bumps post body text one step.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-large" data-sx-pref="Larger post text"><label class="sx-sr-only" for="s-large">Larger post text</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Reduce motion</span>
+                  <span class="sx-setrow__desc">Turns off pops, slides and story timers.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-motion" data-sx-pref="Reduced motion"><label class="sx-sr-only" for="s-motion">Reduced motion</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Autoplay video</span>
+                  <span class="sx-setrow__desc">Only on Wi-Fi.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-auto" data-sx-pref="Autoplay video" checked><label class="sx-sr-only" for="s-auto">Autoplay video</label></div>
+              </div>
+                </div>
+              </div>
+
+              <div data-sx-settings-panel="assistant" hidden>
+                <h2 class="sx-t-h3" tabindex="-1">AI assistant</h2>
+                <p class="sx-meta">The assistant is optional. With it off, the composer and feed work exactly
+                  as they did before.</p>
+                <div class="sx-setgroup">
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Assistant features</span>
+                  <span class="sx-setrow__desc">Turns the assistant, the tools page and composer suggestions on or off.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-ai" data-sx-pref="Assistant features" checked><label class="sx-sr-only" for="s-ai">Assistant features</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Suggestions in the composer</span>
+                  <span class="sx-setrow__desc">Offers a shorter version or alt text while you write.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-ai-compose" data-sx-pref="Composer suggestions" checked><label class="sx-sr-only" for="s-ai-compose">Composer suggestions</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Use my posts for register</span>
+                  <span class="sx-setrow__desc">Reads your published posts so drafts sound like you. Never reads messages or private groups.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-ai-voice" data-sx-pref="Register matching" checked><label class="sx-sr-only" for="s-ai-voice">Register matching</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Save chat history</span>
+                  <span class="sx-setrow__desc">Keeps conversations so you can return to them.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-ai-history" data-sx-pref="Chat history" checked><label class="sx-sr-only" for="s-ai-history">Chat history</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Default answer length</span>
+                  <span class="sx-setrow__desc">How much the assistant writes before you ask for more.</span>
+                </div>
+                <div class="sx-setrow__control"><select class="form-select form-select-sm" data-sx-pref="Answer length" aria-label="Default answer length"><option>Short</option><option selected>Balanced</option><option>Detailed</option></select></div>
+              </div>
+                </div>
+                <div class="sx-setgroup">
+                  <h3 class="sx-setgroup__title">Your data</h3>
+                  <p class="sx-setgroup__desc">Prompts and drafts are stored on your account so you can find
+                    them again. They are never used to train a model.</p>
+                  <div class="sx-setrow">
+                    <div class="sx-setrow__ident">
+                      <span class="sx-setrow__label">Chat history</span>
+                      <span class="sx-setrow__desc">42 conversations, oldest from March.</span>
+                    </div>
+                    <div class="sx-setrow__control">
+                      <button class="btn btn-quiet btn-sm" type="button">Download</button>
+                      <button class="btn btn-danger btn-sm" type="button">Delete all</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-sx-settings-panel="security" hidden>
+                <h2 class="sx-t-h3" tabindex="-1">Security</h2>
+                <p class="sx-meta">Sessions, password and two-factor.</p>
+
+                <form class="sx-setgroup" data-sx-settings-form>
+                  <div class="sx-field">
+                    <label for="s-pass">New password</label>
+                    <div class="sx-passwrap">
+                      <input class="form-control" id="s-pass" type="password" placeholder="At least eight characters">
+                      <button class="sx-passtoggle" type="button" data-sx-pass-toggle aria-label="Show password">
+                        <i data-lucide="eye" class="ic-18"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn btn-brand" type="submit">Update password</button>
+                </form>
+
+                <div class="sx-setgroup">
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Two-factor authentication</span>
+                  <span class="sx-setrow__desc">An app code on every new sign-in.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-2fa" data-sx-pref="Two-factor authentication" checked><label class="sx-sr-only" for="s-2fa">Two-factor authentication</label></div>
+              </div>
+              <div class="sx-setrow">
+                <div class="sx-setrow__ident">
+                  <span class="sx-setrow__label">Alerts for new sign-ins</span>
+                  <span class="sx-setrow__desc">Email whenever a new device signs in.</span>
+                </div>
+                <div class="sx-setrow__control"><input class="form-check-input" type="checkbox" role="switch" id="s-alerts" data-sx-pref="Sign-in alerts" checked><label class="sx-sr-only" for="s-alerts">Sign-in alerts</label></div>
+              </div>
+                </div>
+
+                <div class="sx-setgroup">
+                  <h3 class="sx-setgroup__title">Where you are signed in</h3>
+                  <p class="sx-setgroup__desc">Sign out of anything you do not recognise.</p>
+                  <div class="sx-setrow">
+                    <div class="sx-setrow__ident">
+                      <span class="sx-setrow__label">Chrome on macOS — Portland</span>
+                      <span class="sx-setrow__desc">This device · active now</span>
+                    </div>
+                    <div class="sx-setrow__control"><span class="sx-tag">Current</span></div>
+                  </div>
+                  <div class="sx-setrow">
+                    <div class="sx-setrow__ident">
+                      <span class="sx-setrow__label">Sovix for iOS — Portland</span>
+                      <span class="sx-setrow__desc">Last active 2 hours ago</span>
+                    </div>
+                    <div class="sx-setrow__control">
+                      <button class="btn btn-quiet btn-sm" type="button">Sign out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="sx-foot">
+    <div class="container-xxl sx-foot__inner">
+      <p class="sx-foot__copy">© 2026 <strong>Sovix</strong>. All rights reserved.</p>
+      <nav class="sx-foot__nav" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <!-- ================================================ MOBILE TABBAR ==== -->
+  <nav class="sx-tabbar" aria-label="Primary, mobile">
+    <a class="sx-tabbar__link" href="index-2.html">
+      <i data-lucide="house" class="ic-22"></i>Home
+    </a>
+    <a class="sx-tabbar__link" href="explore.html">
+      <i data-lucide="compass" class="ic-22"></i>Explore
+    </a>
+    <button class="sx-tabbar__link" type="button" data-sx-action="open-composer">
+      <i data-lucide="square-pen" class="ic-22"></i>Post
+    </button>
+    <a class="sx-tabbar__link" href="messages.html">
+      <i data-lucide="message-circle" class="ic-22"></i>Chat
+    </a>
+    <a class="sx-tabbar__link" href="profile.html">
+      <i data-lucide="user" class="ic-22"></i>You
+    </a>
+  </nav>
+
+  <button class="sx-totop" type="button" data-sx-totop aria-label="Back to top">
+    <i data-lucide="arrow-up" class="ic-20"></i>
+  </button>
+  <div class="sx-toast-wrap" aria-live="polite" data-sx-toasts></div>
+
+  <!-- ====================================================== MODALS ====== -->
+
+  <!-- Create / edit post -->
+  <div class="modal fade sx-cp" role="dialog" id="sxCompose" tabindex="-1" aria-labelledby="sxComposeTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button class="sx-backlink" type="button" data-sx-action="cp-pane" data-sx-arg="compose"
+                  data-sx-cp-back aria-label="Back to the post" hidden>
+            <i data-lucide="arrow-left" class="ic-18"></i>
+          </button>
+          <h2 class="modal-title" id="sxComposeTitle" data-sx-cp-title>Create post</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form data-sx-cp-form>
+
+          <div class="modal-body" data-sx-cp-pane="compose">
+            <div class="sx-cp__author">
+              <span class="sx-avatar">
+                <img src="assets/img/avatar/avatar-9.png" alt="Ravi Menon" width="42" height="42">
+              </span>
+              <div>
+                <span class="sx-name">Ravi Menon</span>
+                <button class="sx-audience-btn" type="button" data-sx-action="cp-pane" data-sx-arg="audience"
+                        data-sx-cp-audience aria-label="Choose who can see this post">
+                  <i data-lucide="globe" class="ic-14"></i>
+                  <span data-sx-cp-audience-label>Public</span>
+                  <i data-lucide="chevron-down" class="ic-14"></i>
+                </button>
+              </div>
+            </div>
+
+            <label class="sx-sr-only" for="cp-field">Write your post</label>
+            <textarea class="sx-cp__field" id="cp-field" data-sx-cp-field
+                      placeholder="What are you working on, Ravi?"></textarea>
+
+            <div class="sx-tagged" data-sx-cp-tags></div>
+
+            <p class="sx-cp__meter"><span class="sx-tnum" data-sx-cp-count>480</span> characters left</p>
+
+            <div class="sx-drop" data-sx-cp-drop hidden>
+              <button class="sx-drop__empty" type="button" data-sx-cp-browse data-sx-cp-empty>
+                <span class="sx-drop__icon"><i data-lucide="image" class="ic-20"></i></span>
+                Add photos or video
+                <span>Drop files here, or browse. Up to 25 MB each.</span>
+              </button>
+              <div class="sx-drop__grid" data-sx-cp-grid></div>
+            </div>
+
+            <label class="sx-sr-only" for="cp-file">Choose photos or video</label>
+            <input class="sx-sr-only" id="cp-file" type="file" multiple accept="image/*,video/*" data-sx-cp-file>
+
+            <div class="sx-builder" data-sx-cp-poll hidden>
+              <p class="sx-builder__head">
+                <i data-lucide="chart-no-axes-column" class="ic-16"></i> Poll
+                <button class="sx-iconbtn sx-iconbtn--sm" type="button" data-sx-action="cp-poll-close"
+                        aria-label="Remove the poll"><i data-lucide="x" class="ic-16"></i></button>
+              </p>
+              <div data-sx-poll-rows></div>
+              <div class="sx-builder__grid">
+                <button class="btn btn-quiet btn-sm" type="button" data-sx-poll-add>Add option</button>
+                <label class="sx-sr-only" for="cp-poll-days">How long the poll runs</label>
+                <select class="form-select form-select-sm" id="cp-poll-days" data-sx-poll-days>
+                  <option value="1">1 day</option>
+                  <option value="3" selected>3 days</option>
+                  <option value="7">1 week</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sx-builder" data-sx-cp-event hidden>
+              <p class="sx-builder__head">
+                <i data-lucide="calendar" class="ic-16"></i> Event
+                <button class="sx-iconbtn sx-iconbtn--sm" type="button" data-sx-action="cp-event-close"
+                        aria-label="Remove the event"><i data-lucide="x" class="ic-16"></i></button>
+              </p>
+              <div class="sx-builder__row">
+                <label class="sx-sr-only" for="cp-ev-title">Event name</label>
+                <input class="form-control" id="cp-ev-title" type="text" placeholder="Event name" data-sx-event-title>
+              </div>
+              <div class="sx-builder__grid">
+                <div>
+                  <label class="sx-sr-only" for="cp-ev-date">Starts</label>
+                  <input class="form-control" id="cp-ev-date" type="datetime-local" data-sx-event-date>
+                </div>
+                <div>
+                  <label class="sx-sr-only" for="cp-ev-place">Place or link</label>
+                  <input class="form-control" id="cp-ev-place" type="text" placeholder="Place or link" data-sx-event-place>
+                </div>
+              </div>
+            </div>
+
+            <div class="sx-cp__tools">
+              <span class="sx-cp__tools-label">Add to your post</span>
+              <button class="sx-chip sx-chip--photo" type="button" data-sx-action="cp-tool" data-sx-arg="media"
+                      data-bs-toggle="tooltip" data-bs-title="Photo or video" aria-label="Add a photo or video">
+                <i data-lucide="image" class="ic-18"></i>
+              </button>
+              <button class="sx-chip sx-chip--poll" type="button" data-sx-action="cp-tool" data-sx-arg="poll"
+                      data-bs-toggle="tooltip" data-bs-title="Poll" aria-label="Add a poll">
+                <i data-lucide="chart-no-axes-column" class="ic-18"></i>
+              </button>
+              <button class="sx-chip sx-chip--event" type="button" data-sx-action="cp-tool" data-sx-arg="event"
+                      data-bs-toggle="tooltip" data-bs-title="Event" aria-label="Add an event">
+                <i data-lucide="calendar" class="ic-18"></i>
+              </button>
+              <div class="dropdown">
+                <button class="sx-chip" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        aria-label="Tag people">
+                  <i data-lucide="at-sign" class="ic-18"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end sx-menu sx-modal-scroll" data-sx-cp-people></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body" data-sx-cp-pane="audience" hidden>
+            <p class="modal-title-sub mb-3">Who can see this post? You can change it later from the post menu.</p>
+            <div class="sx-optionlist" data-sx-cp-audience-list></div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-brand sx-cp__submit" type="submit" data-sx-cp-submit disabled>Post</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Who reacted -->
+  <div class="modal fade" role="dialog" id="sxReactors" tabindex="-1" aria-labelledby="sxReactorsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxReactorsTitle">Reactions</h2>
+            <p class="modal-title-sub mb-0" data-sx-reactor-sub>on this post</p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="sx-reactor-tabs" data-sx-reactor-tabs></div>
+          <label class="sx-sr-only" for="reactor-search">Search people who reacted</label>
+          <input class="form-control my-3" id="reactor-search" type="search" placeholder="Search by name"
+                 data-sx-reactor-search autocomplete="off">
+          <div class="sx-reactors" data-sx-reactor-list></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Share -->
+  <div class="modal fade" role="dialog" id="sxShare" tabindex="-1" aria-labelledby="sxShareTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxShareTitle">Share</h2>
+            <p class="modal-title-sub mb-0" data-sx-share-sub></p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="sx-sharegrid">
+            <button type="button" data-sx-share="repost"><i data-lucide="repeat-2" class="ic-20"></i>Repost</button>
+            <button type="button" data-sx-share="quote"><i data-lucide="square-pen" class="ic-20"></i>Quote</button>
+            <button type="button" data-sx-share="message"><i data-lucide="send" class="ic-20"></i>Message</button>
+            <button type="button" data-sx-share="space"><i data-lucide="hash" class="ic-20"></i>To space</button>
+            <button type="button" data-sx-share="copy"><i data-lucide="link" class="ic-20"></i>Copy link</button>
+            <button type="button" data-sx-share="embed"><i data-lucide="copy" class="ic-20"></i>Embed</button>
+            <button type="button" data-sx-share="email"><i data-lucide="mail" class="ic-20"></i>Email</button>
+            <button type="button" data-sx-share="more"><i data-lucide="more-horizontal" class="ic-20"></i>More</button>
+          </div>
+
+          <div class="sx-copyrow">
+            <label class="sx-sr-only" for="share-url">Link to this post</label>
+            <input class="form-control" id="share-url" type="text" readonly data-sx-share-url>
+            <button class="btn btn-soft" type="button" data-sx-share="copy">Copy</button>
+          </div>
+
+          <h3 class="sx-eyebrow mt-4 mb-2">Send to</h3>
+          <div class="sx-reactors" data-sx-share-people></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post audience -->
+  <div class="modal fade" role="dialog" id="sxAudience" tabindex="-1" aria-labelledby="sxAudienceTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxAudienceTitle">Post audience</h2>
+            <p class="modal-title-sub mb-0">This changes who can see the post from now on.</p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="sx-optionlist" data-sx-audience-list></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Report -->
+  <div class="modal fade" role="dialog" id="sxReport" tabindex="-1" aria-labelledby="sxReportTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="sxReportTitle">Report</h2>
+            <p class="modal-title-sub mb-0" data-sx-report-sub></p>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="sx-meta">Pick the closest reason. A reviewer reads every report, and the author is not told who
+            sent it.</p>
+          <div class="sx-optionlist" data-sx-report-list></div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-quiet" type="button" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-brand" type="button" data-sx-report-submit disabled>Send report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm -->
+  <div class="modal fade" role="dialog" id="sxConfirm" tabindex="-1" aria-labelledby="sxConfirmTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="sxConfirmTitle" data-sx-confirm-title>Are you sure?</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0" data-sx-confirm-body></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-quiet" type="button" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-brand" type="button" data-sx-confirm-go>Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Media viewer -->
+  <div class="modal fade sx-lightbox" role="dialog" id="sxLightbox" tabindex="-1" aria-labelledby="sxLightboxTitle" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <h2 class="sx-sr-only" id="sxLightboxTitle">Media viewer</h2>
+        <button class="sx-lightbox__close" type="button" data-bs-dismiss="modal" aria-label="Close the viewer">
+          <i data-lucide="x" class="ic-20"></i>
+        </button>
+        <div class="sx-lightbox__layout">
+          <div class="sx-lightbox__media">
+            <div class="sx-lightbox__stage" data-sx-lightbox-stage></div>
+            <button class="sx-lightbox__nav sx-lightbox__nav--prev" type="button" data-sx-lightbox-nav="prev"
+                    aria-label="Previous"><i data-lucide="chevron-left" class="ic-22"></i></button>
+            <button class="sx-lightbox__nav sx-lightbox__nav--next" type="button" data-sx-lightbox-nav="next"
+                    aria-label="Next"><i data-lucide="chevron-right" class="ic-22"></i></button>
+          </div>
+          <aside class="sx-lightbox__side" data-sx-lightbox-side aria-label="Post, reactions and comments" hidden></aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/lucide/lucide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-sx-theme="light">
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a Sovix account and start posting work in progress.">
+  <meta name="author" content="Sovix">
+  <meta name="theme-color" content="#4b34d9">
+
+  <title>Sovix - Social Network &amp; Community HTML Template</title>
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/svg+xml">
+  <link rel="canonical" href="register.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sovix">
+  <meta property="og:title" content="Join Sovix — Sovix">
+  <meta property="og:description" content="Create a Sovix account and start posting work in progress.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <a class="sx-skip-link" href="#main">Skip to the main content</a>
+
+  <main class="sx-auth" id="main">
+      <div class="sx-auth__panel">
+        <div class="sx-auth__inner">
+        <a class="sx-brand" href="index-2.html">
+          <img class="sx-brand__mark" src="assets/img/logo.svg" alt="" width="36" height="36">
+          <span class="sx-brand__word">Sovix</span>
+        </a>
+          <h1 class="sx-auth__title">Join Sovix</h1>
+          <p class="sx-auth__sub">Post work in progress, follow makers, and get a critique that is specific
+            enough to act on.</p>
+
+          <form data-sx-auth-form data-sx-auth-next="index.html" data-sx-auth-busy="Creating account…" novalidate>
+            <div class="sx-field-grid">
+              <div class="sx-field">
+                <label for="reg-name">Full name</label>
+                <input class="form-control" id="reg-name" type="text" required autocomplete="name"
+                       placeholder="Ravi Menon">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="sx-field">
+                <label for="reg-handle">Handle</label>
+                <input class="form-control" id="reg-handle" type="text" required placeholder="@ravimenon">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="sx-field">
+              <label for="reg-email">Email</label>
+              <input class="form-control" id="reg-email" type="email" required autocomplete="email"
+                     placeholder="name@example.com">
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <div class="sx-field">
+              <label for="reg-pass">Password</label>
+              <div class="sx-passwrap">
+                <input class="form-control" id="reg-pass" type="password" required autocomplete="new-password"
+                       placeholder="At least eight characters" data-sx-strength>
+                <button class="sx-passtoggle" type="button" data-sx-pass-toggle aria-label="Show password">
+                  <i data-lucide="eye" class="ic-18"></i>
+                </button>
+              </div>
+              <div class="sx-strength" data-sx-strength-meter>
+                <span class="sx-strength__bar"></span>
+                <span class="sx-strength__bar"></span>
+                <span class="sx-strength__bar"></span>
+                <span class="sx-strength__bar"></span>
+              </div>
+              <span class="form-text" data-sx-strength-label>Use a phrase you can remember and nobody can guess.</span>
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <div class="sx-switchrow ps-0 mb-3">
+              <input class="form-check-input" type="checkbox" id="reg-terms" required>
+              <label for="reg-terms">I agree to the <a href="terms.html">terms</a> and
+                <a href="privacy.html">privacy notice</a></label>
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <button class="btn btn-brand w-100" type="submit">Create account</button>
+          </form>
+
+          <p class="sx-auth__foot">Already have an account? <a href="login.html">Sign in</a></p>
+          <p class="sx-auth__foot mt-2"><a href="pages.html">Browse all template pages</a></p>
+        </div>
+      </div>
+
+      <aside class="sx-auth__aside">
+        <p class="sx-auth__quote">“I posted an unfinished thing on a Tuesday and had three people pull it
+          apart by Wednesday. That is the whole point.”</p>
+        <div class="sx-auth__by">
+          <span class="sx-avatar sx-avatar--sm">
+            <img src="assets/img/avatar/avatar-6.png" alt="" width="34" height="34">
+          </span>
+          <div>
+            <span class="sx-strong d-block">Nadia Hart</span>
+            <span class="sx-meta">Type &amp; lettering, Rotterdam</span>
+          </div>
+        </div>
+        <div class="sx-auth__proof">
+          <div><strong>240K</strong><span>people who make things</span></div>
+          <div><strong>1,900</strong><span>spaces</span></div>
+          <div><strong>Daily</strong><span>critique rooms</span></div>
+        </div>
+      </aside>
+  </main>
+
+  <div class="sx-toast-wrap" aria-live="polite" data-sx-toasts></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/lucide/lucide.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from html.themiverse.com/sovix-demo/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2026 02:07:09 GMT -->
+</html>

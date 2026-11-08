@@ -1,0 +1,5 @@
+.DS_Store
+.env
+storage/logs/*
+storage/uploads/*
+!storage/**/.gitkeep
