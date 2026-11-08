@@ -1,0 +1,22 @@
+# Praxia — .htaccess raíz
+# Redirige todas las peticiones a public/ y bloquea el acceso web a carpetas internas.
+
+Options -Indexes
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Bloquear archivos ocultos (.env, .git, .agents, .gitignore, ...)
+    RewriteRule (^|/)\. - [F,L]
+
+    # Bloquear carpetas internas y documentación
+    RewriteRule ^(app|config|database|storage|docs)(/|$) - [F,L]
+    RewriteRule \.md$ - [F,L]
+
+    # Plantilla Sovix de referencia (solo para desarrollo local)
+    RewriteRule ^_template(/|$) - [L]
+
+    # Todo lo demás se sirve desde public/
+    RewriteRule ^(?!public/)(.*)$ public/$1 [L]
+</IfModule>
