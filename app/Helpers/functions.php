@@ -132,3 +132,22 @@ if (!function_exists('is_active')) {
         return $current === $path || ($prefix && $path !== '/' && str_starts_with($current, $path . '/'));
     }
 }
+
+if (!function_exists('partial')) {
+    /** Renderiza app/Views/partials/<name>.php y devuelve el HTML. */
+    function partial(string $name, array $data = []): string
+    {
+        return \App\Core\View::make('partials/' . $name, $data);
+    }
+}
+
+if (!function_exists('avatar_url')) {
+    /** URL del avatar de un usuario o el avatar por defecto. */
+    function avatar_url(?string $path): string
+    {
+        if ($path === null || $path === '') {
+            return asset('img/avatar/avatar-1.png');
+        }
+        return preg_match('#^https?://#', $path) ? $path : url('/media/' . ltrim($path, '/'));
+    }
+}

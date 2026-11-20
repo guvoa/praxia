@@ -215,7 +215,7 @@
       document.documentElement.setAttribute("data-sx-theme", mode);
       $$("[data-sx-theme-toggle]").forEach(function (btn) {
         btn.setAttribute("aria-pressed", mode === "dark" ? "true" : "false");
-        btn.setAttribute("aria-label", mode === "dark" ? "Switch to light theme" : "Switch to dark theme");
+        btn.setAttribute("aria-label", mode === "dark" ? "Cambiar a tema claro" : "Cambiar a tema oscuro");
       });
     },
 

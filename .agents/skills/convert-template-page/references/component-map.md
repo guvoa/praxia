@@ -86,6 +86,18 @@ pasen a ser reales (POST al servidor), **elimina** estos atributos:
 Conserva los que solo son UI: `data-sx-tabs`/`data-sx-tab`/`data-sx-tabpanel`,
 `data-sx-theme-toggle`, `data-sx-search-*`, `data-sx-totop`, `data-bs-*`.
 
+JS propio de Praxia: `public/assets/js/app.js` (toasts flash del servidor y
+confirmación de formularios con `data-confirm`, `data-confirm-title`,
+`data-confirm-button`, `data-confirm-danger`). La copia `public/assets/js/main.js`
+ya tiene textos traducidos (aria-label del tema); no la reemplaces con la de `_template/`.
+
+## 5b. Partials ya creados (reutilizar, no duplicar)
+
+`layouts/main.php` (`$title`, `$wide`, `$rightRail`), `layouts/auth.php`,
+`partials/topbar.php`, `rail-left.php` (`$myProjects`, `$profileStats`),
+`rail-right.php`, `footer.php`, `tabbar.php`, `flash.php`, `modals/confirm.php`.
+Helpers: `partial()`, `avatar_url()`, `is_active()`.
+
 ## 6. Fuera de alcance (eliminar de la UI)
 
 Minicart y `cart/checkout/purchases/order-confirmation/store/product`, historias
