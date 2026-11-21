@@ -52,7 +52,7 @@ final class Router
             }
 
             if ($method === 'POST' && !Csrf::validate(Csrf::fromRequest())) {
-                $this->abort(419, 'Sesión expirada', 'Tu sesión expiró o el formulario no es válido. Recarga la página e inténtalo de nuevo.');
+                $this->abort(403, 'Sesión expirada', 'Tu sesión expiró o el formulario no es válido. Recarga la página e inténtalo de nuevo.');
                 return;
             }
 

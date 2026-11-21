@@ -45,9 +45,11 @@ final class Auth
         self::$user = null;
     }
 
+    /** Cierra la sesión: vacía los datos y rota el id (la sesión sigue viva para mensajes flash). */
     public static function logout(): void
     {
         self::$user = null;
-        Session::destroy();
+        $_SESSION = ['_flash_old' => [], '_flash_new' => []];
+        Session::regenerate();
     }
 }

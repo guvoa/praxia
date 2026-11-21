@@ -3063,7 +3063,7 @@
         if (!input) return;
         var shown = input.getAttribute("type") === "text";
         input.setAttribute("type", shown ? "password" : "text");
-        btn.setAttribute("aria-label", shown ? "Show password" : "Hide password");
+        btn.setAttribute("aria-label", shown ? "Mostrar contraseña" : "Ocultar contraseña");
         setIcon(btn, shown ? "eye" : "eye-off", "ic-18");
       });
     });
@@ -3083,7 +3083,7 @@
         meter.className = "sx-strength is-" + score;
         var label = $("[data-sx-strength-label]", input.closest(".sx-field"));
         if (label) {
-          label.textContent = ["Too short", "Weak", "Fair", "Good", "Strong"][score] || "";
+          label.textContent = ["Muy corta", "Débil", "Aceptable", "Buena", "Fuerte"][score] || "";
         }
       });
     });
